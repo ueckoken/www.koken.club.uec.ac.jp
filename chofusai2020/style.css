@@ -9,7 +9,19 @@ main {
 }
 
 main section {
-    width: 33%;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    main section {
+        width: calc(100% / 2);
+    }
+}
+
+@media (min-width: 1280px) {
+    main section {
+        width: calc(100% / 3);
+    }
 }
 
 main section h1 {
