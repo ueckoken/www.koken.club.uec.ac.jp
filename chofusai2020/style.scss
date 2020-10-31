@@ -40,6 +40,10 @@ header{
         font-size: $font-xl;
         font-weight: bold;
     }
+    p{
+        color: $PCB-metal-color;
+        margin: $space-s;
+    }
 }
 
 main{
