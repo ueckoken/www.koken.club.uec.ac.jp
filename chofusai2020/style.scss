@@ -1,8 +1,11 @@
 $PCB-back-color: rgb(0, 128, 64);
-$PCB-gold-color: rgb(230, 180, 34);
+$PCB-metal-color: rgb(230, 180, 34);
+$PCB-metal-rust-color: (rgb(255, 0, 0) + $PCB-metal-color) / 2;
 $AVR-body-color: rgb(48, 48, 48);
 $AVR-char-color: rgb(196, 196, 196);
-$maskingtape-color: rgba(255, 255, 255, 0.75);
+$LCD-body-color: rgb(17, 0, 17);
+$maskingtape-color: rgb(255, 255, 255);
+$maskingtape-on-PCB-color: $PCB-back-color * 0.25 + $maskingtape-color * 0.75;
 
 $min-tablet-size: 768px;
 $min-PC-size: 1280px;
@@ -10,14 +13,32 @@ $min-PC-size: 1280px;
 $breakpoint-tablet: $min-tablet-size;
 $breakpoint-PC: $min-PC-size;
 
+$font-bit: 16px;
+$font-ratio: 1.5;
+$font-s: $font-bit / $font-ratio;
+$font-m: $font-bit;
+$font-l: $font-bit * $font-ratio;
+$font-xl: $font-bit * $font-ratio * $font-ratio;
+
+$space-bit: 0.5rem;
+$space-xs: $space-bit;
+$space-s: $space-bit * 2;
+$space-m: $space-bit * 3;
+$space-l: $space-bit * 5;
+$space-xl: $space-bit * 8;
+
 body{
-    background: $PCB-back-color;
+    background-color: $PCB-back-color;
+    font-size: $font-m;
 }
 
 header{
+    text-align: center;
+    padding: $space-m;
     h1{
-        text-align: center;
-        color: $PCB-gold-color;
+        color: $PCB-metal-color;
+        font-size: $font-xl;
+        font-weight: bold;
     }
 }
 
@@ -25,32 +46,74 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: 0 $space-s;
+    @media(min-width: $breakpoint-PC){
+        width: $min-PC-size;
+        margin: 0 auto;
+    }
     section{
-        width: 100%;
+        width: calc(100% - #{$space-s} * 2);
+        margin-bottom: $space-l;
         @media(min-width: $breakpoint-tablet){
-            width: calc(100% / 2);
+            width: calc((100% / 2) - #{$space-s} * 2);
         }
         @media(min-width: $breakpoint-PC){
-            width: calc(100% / 3);
+            width: calc((100% / 3) - #{$space-s} * 2);
         }
         h1{
             text-align: center;
-            span{
-                background: $AVR-body-color;
-                color: $AVR-char-color;
+            font-size: $font-l;
+            padding: $space-s;
+            div{
+                border-style: solid;
+                border-width: 8px;
+                border-image: url("img/AVRborder.png") 8 8 / 8px round;
+                display: inline;
+                span{
+                    color: $AVR-char-color;
+                    background-color: $AVR-body-color;
+                }
             }
         }
         img{
             width: 100%;
+            box-sizing: border-box;
+            border: solid $space-m $LCD-body-color;
+            border-bottom-width: $space-l;
         }
         div{
-            height: 2rem;
-            background: $maskingtape-color;
+            margin: $space-s;
+            border-style: solid;
+            border-width: 8px;
+            border-image: url("img/maskingtapeBorder.png") 8 8 / 8px round;
             p{
-                display: -webkit-box;
-                -webkit-line-clamp: 2;
+                line-height: 2.2em;
+                background-color: $maskingtape-on-PCB-color;
+                /*display: -webkit-box;
+                -webkit-line-clamp: 3;
                 -webkit-box-orient: vertical;
-                overflow: hidden;
+                overflow: hidden;*/
+            }
+        }
+    }
+}
+
+footer{
+    text-align: center;
+    p{
+        small{
+            color: $PCB-metal-color;
+        }
+    }
+    li{
+        margin: $space-xs 0;
+        a{
+            color: $PCB-metal-color;
+            &:after{
+                content: " ☚";
+            }
+            &:visited{
+                color: $PCB-metal-rust-color;
             }
         }
     }
