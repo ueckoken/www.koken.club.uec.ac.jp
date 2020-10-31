@@ -18,8 +18,15 @@ Rubyで動く
 `gem install haml`
 #### コンパイル
 `haml -q index.haml index.html`
-- [HAML公式ドキュメント](https://haml.info/docs/yardoc/file.REFERENCE.html)
+#### リンク
+- [HAML公式サイト](https://haml.info/)
 ### SCSS
-調べ中...
-### 書いた人
+rubyで動く、が今回はnode.js版にした
+#### インストール
+`npm install node-sass`
+#### コンパイル
+`node-sass --output-style expanded --indent-width 4 style.scss style.css`
+#### リンク
+- [SASS公式サイト](https://sass-lang.com/)
+## 書いた人
 淵野アタリ
