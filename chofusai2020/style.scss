@@ -1,6 +1,6 @@
 $PCB-back-color: rgb(0, 128, 64);
 $PCB-metal-color: rgb(230, 180, 34);
-$PCB-metal-rust-color: (rgb(255, 0, 0) + $PCB-metal-color) / 2;
+$PCB-metal-rust-color: rgb(255, 0, 0) * 0.3 + $PCB-metal-color * 0.7;
 $AVR-body-color: rgb(48, 48, 48);
 $AVR-char-color: rgb(196, 196, 196);
 $LCD-body-color: rgb(17, 0, 17);
