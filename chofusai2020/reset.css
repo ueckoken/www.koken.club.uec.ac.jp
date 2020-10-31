@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     border: 0;
+    line-height: 1.0;
+    font-weight: normal;
+    font-size: 18px;
 }
 a{
     text-decoration: none;
