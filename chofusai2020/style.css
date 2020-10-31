@@ -1,0 +1,21 @@
+header h1 {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+main section {
+    width: 33%;
+}
+
+main section h1 {
+    text-align: center;
+}
+
+main section img {
+    width: 100%;
+}
