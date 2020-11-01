@@ -31,10 +31,8 @@ Rubyで動く。
 - [HAML公式サイト](https://haml.info/)
 ### SCSS
 Rubyで動く、が今回はnode.js版にした。
-- インストール  
-`npm install node-sass`
 -  コンパイル  
-`node-sass --output-style expanded --indent-width 4 style.scss style.css`
+`npx sass --style expanded --no-source-map style.scss style.css`
 #### 参考
 - [SASS公式サイト](https://sass-lang.com/)
 ## 書いた人

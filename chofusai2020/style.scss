@@ -1,11 +1,13 @@
+@use "sass:color";
+
 $PCB-back-color: rgb(0, 128, 64);
 $PCB-metal-color: rgb(230, 180, 34);
-$PCB-metal-rust-color: rgb(255, 0, 0) * 0.3 + $PCB-metal-color * 0.7;
+$PCB-metal-rust-color: color.mix(rgb(255, 0, 0), $PCB-metal-color, 30%);
 $AVR-body-color: rgb(48, 48, 48);
 $AVR-char-color: rgb(196, 196, 196);
 $LCD-body-color: rgb(17, 0, 17);
 $maskingtape-color: rgb(255, 255, 255);
-$maskingtape-on-PCB-color: $PCB-back-color * 0.25 + $maskingtape-color * 0.75;
+$maskingtape-on-PCB-color: color.mix($PCB-back-color, $maskingtape-color, 25%);
 
 $min-tablet-size: 768px;
 $min-PC-size: 1280px;
