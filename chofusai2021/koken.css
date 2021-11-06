@@ -1,12 +1,12 @@
 :root {
-	--main-colour: #ff0000; /*タイトルの色*/
+    --main-colour: #ff0000; /*タイトルの色*/
 
     --light-sub-colour: #edf2f4; /*各subsection背景*/
     --light-bg-colour: #ffffff; /*背景*/
     --light-fg-colour: initial; /*前景*/
 
-	--dark-bg: #2b2d42; /*dark theme 背景*/
-	--dark-sub: #746e6e; /*dark theme subsection背景*/
+    --dark-bg: #2b2d42; /*dark theme 背景*/
+    --dark-sub: #746e6e; /*dark theme subsection背景*/
     --dark-fg: white; /*dark theme 前景*/
 
     --bg-colour: var(--light-bg-colour);
