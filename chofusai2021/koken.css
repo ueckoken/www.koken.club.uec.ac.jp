@@ -27,27 +27,9 @@ header {
     border-radius: 0.2em;
 }
 header > img {
-    display: inline-block;
     height: 100%;
-    vertical-align: top; 
-    box-sizing: border-box;
 }
-header > .logo-title{
-    display: inline-block;
-    height: 100%;
-    vertical-align: top; 
-    box-sizing: border-box;
-}
-header > .logo-title > h1 {
-    color: white; 
-    font-size: 2.8em; 
-    margin: 0%;
-}
-header > .logo-title > h2 {
-    color: white; 
-    font-size: 1.3em; 
-    margin: 0%;
-}
+
 .lside { grid-area: a; background: var(--bg-colour); }
 .rside { grid-area: c; background: var(--bg-colour); }
 
