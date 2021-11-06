@@ -16,7 +16,7 @@ body {
 .main { display: grid; width: 100%; height: 100vh;
     grid-template-areas: "a h c" "a b c" "a d c";
     grid-template-columns: 1fr 67em 1fr;
-    grid-template-rows: 9.5em 1fr 2em 
+    grid-template-rows: 9.5em 1fr 2.5em 
 }
 
 header {
@@ -27,27 +27,9 @@ header {
     border-radius: 0.2em;
 }
 header > img {
-    display: inline-block;
     height: 100%;
-    vertical-align: top; 
-    box-sizing: border-box;
 }
-header > .logo-title{
-    display: inline-block;
-    height: 100%;
-    vertical-align: top; 
-    box-sizing: border-box;
-}
-header > .logo-title > h1 {
-    color: white; 
-    font-size: 2.8em; 
-    margin: 0%;
-}
-header > .logo-title > h2 {
-    color: white; 
-    font-size: 1.3em; 
-    margin: 0%;
-}
+
 .lside { grid-area: a; background: var(--bg-colour); }
 .rside { grid-area: c; background: var(--bg-colour); }
 
@@ -63,7 +45,12 @@ section { grid-area: b;
 }
 
 
-footer { grid-area: d; background: var(--main-colour); }
+footer {
+    grid-area: d;
+    background: var(--main-colour);
+    padding: 0.5em; 
+    border-radius: 0.2em;
+}
 
 address { text-align: right; color: white; margin-right:1em;}
 
@@ -131,12 +118,12 @@ p {text-indent: 1em;}
 
 @media (max-width:850px){
     .main {
-        grid-template-columns: 0vw 1fr 0vw;
+        grid-template-columns: 0 100% 0;
     }
 }
 
 @media (max-width:530px){
-    .main {grid-template-columns: 0 1fr 0;
+    .main {grid-template-columns: 0 100% 0;
         grid-template-rows: 30vw 1fr 2em 
     }
     h1 {font-size: 13vw;}
