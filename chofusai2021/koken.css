@@ -33,11 +33,11 @@ header > img {
 .lside { grid-area: a; background: var(--bg-colour); }
 .rside { grid-area: c; background: var(--bg-colour); }
 
-section { grid-area: b; 
+.sections { grid-area: b; 
     padding-left: 1em; 
     padding-right: 1em;
 }
-.subsection{
+section {
     margin: 0.6em;
     padding: 0.6em;
     border-radius: 0.2em;
@@ -143,6 +143,6 @@ p {text-indent: 1em;}
     h2{color: white;}
     p{color: white;}
 
-    .subsection{background: var(--dark-sub);}
+    section{background: var(--dark-sub);}
     a {color: #93d7f7;}
 }  /*dark theme*/
