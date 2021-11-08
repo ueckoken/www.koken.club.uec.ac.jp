@@ -45,18 +45,23 @@ header {
     margin: 1em; 
     border-radius: 0.2em;
 }
-header > img {
+
+header h1 {
+    margin: 0;
+}
+
+header h1, header h1 img {
     height: 100%;
 }
 
 .lside { grid-area: a; background: var(--bg-colour); }
 .rside { grid-area: c; background: var(--bg-colour); }
 
-section { grid-area: b; 
+.sections { grid-area: b; 
     padding-left: 1em; 
     padding-right: 1em;
 }
-.subsection{
+section {
     margin: 0.6em;
     padding: 0.6em;
     border-radius: 0.2em;
