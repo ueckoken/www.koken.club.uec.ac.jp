@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta name="theme-color" content="#ff0000">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+        <title>工学研究部 - 調布祭特設サイト</title>
+        <link href="../koken.css" rel="stylesheet">
+        <link rel="shortcut icon" href="../fig/favicon.ico">
+    </head>
+
+    <body ontouchstart="">
+        <div class="main">
+            <header>
+                <h1>
+                    <a href="../index.html">
+                        <img src="../fig/ko-ken_title.png" alt="工学研究部 特設サイト">
+                    </a>
+                </h1>
+            </header>
+
+            <div class="sections">
+                <section>
+                    <h2>ピコピコハンド</h2>
+                    Created by Void and Valkilly
+                    <p>
+                        加速度センサ、ジャイロセンサと TensorFlow の学習済みモデルを使用してハンドジェスチャーを認識し、赤外線LED を用いてテレビリモコン操作が行えるリモコン。これで、テレビのリモコンを探すことなく部屋のどこにいても瞬時にテレビ操作を行えます。
+                    </p>
+                </section>
+                <section>
+                    <h3>デモ動画</h3>
+                    <div style="text-align: center;">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/HDt9GDga1VE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </section>
+                <section>
+                    <h3>使用技術</h3>
+                    <ul>
+                        <li>
+                             TensorFlow Lite（ジェスチャー認識）<br>
+                             学習済みモデルを使用（<a href="https://github.com/tensorflow/tflite-micro/tree/main/tensorflow/lite/micro/examples/magic_wand">参考</a>）
+                        </li>
+                        <li>
+                            M5 Stick C（加速度センサ、ジャイロセンサ、赤外線LED内蔵）
+                        </li>
+                   </ul>
+                    <u>詳しくは「工学研究部 部報 68 号」や、調布祭の展示を御覧ください。</u>
+                </section>
+            </div>
+
+            <footer>
+                <address>University of Electro-Communication koken </address>
+            </footer>
+            
+        </div>
+    </body>
+</html>
