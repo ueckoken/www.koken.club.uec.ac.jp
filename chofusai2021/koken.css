@@ -68,6 +68,19 @@ section {
     background: var(--sub-colour);
 }
 
+section h3{
+    margin: 0 0 1em 0;
+}
+
+.img-centering{
+    text-align: center;
+}
+
+section .img-centering img{
+    width: 100%;
+    max-width: 400px;
+    border-radius: 0.2em;
+}
 
 footer {
     grid-area: d;
