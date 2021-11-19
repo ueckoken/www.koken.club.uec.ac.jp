@@ -82,6 +82,10 @@ section .img-centering img{
     border-radius: 0.2em;
 }
 
+.tweetbutton{
+    margin-left: 1em;
+}
+
 footer {
     grid-area: d;
     background: var(--main-colour);
