@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta name="theme-color" content="#ff0000">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+    <title>工学研究部 - 調布祭特設サイト</title>
+    <link href="../../koken.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../../fig/favicon.ico">
+    <script>
+        function clipPaste(str) {
+            navigator.clipboard.writeText(str).then(
+                () => {
+                    setTimeout(() => {
+                    }, 100)
+                }
+            ).then(() => {
+                    window.open("https://music.azukibar.dev", "_blank");
+                }
+            )
+        }
+    </script>
+</head>
+
+<body ontouchstart="">
+<div class="main">
+    <header>
+        <h1>
+            <a href="../../index.html">
+                <img src="../../fig/ko-ken_title.png" alt="工学研究部 特設サイト">
+            </a>
+        </h1>
+    </header>
+
+    <div class="sections">
+        <section>
+            <h2>Share Music Property</h2>
+            Created by あずきバー (Twitter: @azukibar_D)
+            <p>
+                Spotifyのリンクから曲名とアーティスト名を検索してツイッターに投稿するやつ。
+            </p>
+            <p>
+                NextJSで遊びたくて作りました。
+            </p>
+        </section>
+        <section>
+            <div>
+                <a href="https://music.azukibar.dev" target="_blank">
+                    <img src="../../fig/azukibar-works.webp" style="max-width: 100%"
+                         alt="capture"></a>
+            </div>
+            Spotifyの契約していない人は以下のリンクを使ってみて試してみてください。
+            コピー後サイトに遷移します。
+            <button>
+                <code class="spotify-link"
+                      onclick="clipPaste(`https://open.spotify.com/track/6LBapK106R293G5MJyRp19?si=60c589e31ce94c72`)">
+                    https://open.spotify.com/track/6LBapK106R293G5MJyRp19?si=60c589e31ce94c72</code>
+            </button>
+        </section>
+    </div>
+
+    <footer>
+        <address>University of Electro-Communication koken</address>
+    </footer>
+
+</div>
+</body>
+</html>
