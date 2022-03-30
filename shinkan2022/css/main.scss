@@ -1,26 +1,75 @@
 @charset "UTF-8";
 
-.card {
-  border: none;
+/* ヘッダースライド */
+#header-carousel {
+  .carousel-inner {
+    height: 100vh;
+    .content-wrapper {
+      z-index: 1;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+    }
+
+    .carousel-item {
+      /* 少しはみ出させることでBlurの端を無くす */
+      img {
+        width: calc(100% + 30px);
+        object-fit: cover;
+        filter: blur(5px);
+        -ms-filter: blur(5px);
+        margin: -10px;
+      }
+    }
+
+    .logo {
+      transform: translate(-50%, -50%);
+      filter: drop-shadow(3px 3px 5px whitesmoke);
+      width: 80vw;
+      max-width: 600px;
+    }
+  }
 }
 
-#works img {
-  height: 300px;
-  object-fit: cover;
+/* 作品一覧 */
+#works {
+  img {
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .title {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .creator {
+    text-align: right;
+  }
+
+  small {
+    font-size: 1.0em;
+  }
+
+  .card {
+    border: none;
+  }
 }
 
-#works .title {
-  font-size: 1.5em;
-  padding-left: 10px;
-}
-
+/* Tagフィルタチェックボックス */
 .checkbox {
   padding: 4px;
   text-align: right;
+
+  input {
+    /* チェックボックス位置揃え */
+    position: relative;
+    top: 2px;
+  }
 }
 
-.checkbox input {
-  /* チェックボックス位置揃え */
-  position: relative;
-  top: 2px;
+.bg-img {
+  background-image: url('/img/server.jpg');
+  background-size: cover;
+  background-position: center 60%;
 }

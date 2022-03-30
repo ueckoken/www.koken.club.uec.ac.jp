@@ -18,32 +18,53 @@
 </head>
 
 <body>
-<div class="container" id="app">
-  <h3>作品紹介</h3>
-  <div class="checkbox">
-    <input type="checkbox" id="soft" value="soft" v-model="checkedTags">
-    <label for="soft"><span class="badge bg-secondary">software</span></label>
-    <input type="checkbox" id="hard" value="hard" v-model="checkedTags">
-    <label for="hard"><span class="badge bg-primary">hardware</span></label>
-    <input type="checkbox" id="etc" value="etc" v-model="checkedTags">
-    <label for="etc"><span class="badge bg-success">extra</span></label>
-  </div>
-  <div id="works">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-2">
-      <div class="col" v-for="(work,index) in checkedWorks" :key="index">
-        <div class="card m-1">
-          <span class="title">{{ work.title }}</span>
-          <img class="card-img-top rounded" :src="work.image" :alt="work.title" width="100%">
-          <div class="card-body p-1">
-            <div>
-<!--              <span class="badge bg-secondary" v-if='work.tags.includes("hard")'>hardware</span>-->
-<!--              <span class="badge bg-primary" v-if='work.tags.includes("soft")'>software</span>-->
-<!--              <span class="badge bg-success" v-if='work.tags.includes("etc")'>extra</span>-->
+<div class="main" id="app">
+  <header>
+    <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="content-wrapper">
+          <img src="./fig/logo.svg" alt="logo" class="logo"/>
+        </div>
+        <div class="carousel-item active">
+          <img src="/img/server.jpg">
+        </div>
+        <div class="carousel-item">
+          <img src="/img/electronic.jpg">
+        </div>
+        <div class="carousel-item">
+          <img src="/img/server.jpg">
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <h3>作品紹介</h3>
+    <div class="checkbox">
+      <input type="checkbox" id="soft" value="soft" v-model="checkedTags">
+      <label for="soft"><span class="badge bg-secondary">software</span></label>
+      <input type="checkbox" id="hard" value="hard" v-model="checkedTags">
+      <label for="hard"><span class="badge bg-primary">hardware</span></label>
+      <input type="checkbox" id="etc" value="etc" v-model="checkedTags">
+      <label for="etc"><span class="badge bg-success">extra</span></label>
+    </div>
+    <div id="works">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-2">
+        <div class="col" v-for="(work,index) in checkedWorks" :key="index">
+          <div class="card m-1">
+            <span class="title">{{ work.title }}</span>
+            <small class="creator">Created by <b>{{ work.creator }}</b></small>
+            <img class="card-img-top rounded" :src="work.image" :alt="work.title" width="100%">
+            <div class="card-body p-1">
+              <!--            作品の横にTagを表示する -->
+              <!--            <div>-->
+              <!--              <span class="badge bg-secondary" v-if='work.tags.includes("hard")'>hardware</span>-->
+              <!--              <span class="badge bg-primary" v-if='work.tags.includes("soft")'>software</span>-->
+              <!--              <span class="badge bg-success" v-if='work.tags.includes("etc")'>extra</span>-->
+              <!--            </div>-->
+              <p>
+                {{ work.text }}
+              </p>
             </div>
-            <small>Created by <b>{{ work.creator }}</b></small>
-            <p>
-              {{ work.text }}
-            </p>
           </div>
         </div>
       </div>
@@ -125,7 +146,7 @@
                 {
                     title: "さとうささら(Ceviord)",
                     text: "Discord テキスト読み上げBot",
-                    creator: "Aukibar & gotti",
+                    creator: "Azukibar&gotti",
                     tags: ["soft"],
                     image: "./works/Ceviord/ceviord.png",
                 },
