@@ -1,0 +1,3 @@
+FalceRig
+FaceRigのパチモン、字幕機能付き。
+By 淵野アタリ

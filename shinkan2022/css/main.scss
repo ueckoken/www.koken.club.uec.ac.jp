@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+.card {
+  border: none;
+}
+
+#works img {
+  height: 300px;
+  object-fit: cover;
+}
+
+#works .title {
+  font-size: 1.5em;
+  padding-left: 10px;
+}
+
+.checkbox {
+  padding: 4px;
+  text-align: right;
+}
+
+.checkbox input {
+  /* チェックボックス位置揃え */
+  position: relative;
+  top: 2px;
+}
