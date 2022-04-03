@@ -1,7 +1,167 @@
 [
   {
     "title": "A47アンプ",
+    "text": "A47アンプです。音が大きくなったりします",
     "creator": "sheelfon",
-    "text": "A47アンプです\n音が大きくなったりします"
+    "tags": [
+      "hard"
+    ],
+    "image": "./works/A47Amp/DSC_0125.jpg"
+  },
+  {
+    "title": "オーディオミキサー",
+    "text": "オーディオミキサですスイッチかっこいいよね",
+    "creator": "sheelfon",
+    "tags": [
+      "hard"
+    ],
+    "image": "./works/AudioMixer/DSC_0127.jpg"
+  },
+  {
+    "title": "自動制御IHコンロ",
+    "text": "卓上IHコンロの操作パネルのタクトスイッチにリレーをつなぎ、Arduinoに接続しました",
+    "creator": "りんりん",
+    "tags": [
+      "hard"
+    ],
+    "image": "./works/AutoIH/rice-ESP32-3.jpg"
+  },
+  {
+    "title": "さとうささら(Ceviord)",
+    "text": "Discord テキスト読み上げBot",
+    "creator": "Azukibar&gotti",
+    "tags": [
+      "soft"
+    ],
+    "image": "./works/Ceviord/ceviord.png"
+  },
+  {
+    "title": "最安経路検索",
+    "text": "出発地点、中継地点、到着地点を指定して最も安いルートを検索できるアプリ",
+    "creator": "淵野アタリ",
+    "tags": [
+      "soft"
+    ],
+    "image": "./works/CheapestRoute/cheapTransfer.png"
+  },
+  {
+    "title": "期限ギリギリスト",
+    "text": "授業課題に特化したタスクアプリ、毎週出る課題を登録できる",
+    "creator": "淵野アタリ",
+    "tags": [
+      "soft"
+    ],
+    "image": "./works/DeadlineList/deadlineBarelistMobileTaskListScreenSample.jpg"
+  },
+  {
+    "title": "電光掲示板",
+    "text": "Arduinoと8*8マトリックスを使って動かしています",
+    "creator": "もっちゃん",
+    "tags": [
+      "hard"
+    ],
+    "image": "./works/ElectricBoard/thumnail.jpg"
+  },
+  {
+    "title": "電子ホイッスル",
+    "text": "Arduinoに頼りまくって作る電子民族管楽器",
+    "creator": "Suzuke",
+    "tags": [
+      "hard",
+      "soft"
+    ],
+    "image": "./works/ElectricWhistle/image0.jpg"
+  },
+  {
+    "title": "FlaceRig",
+    "text": "FaceRigのパチモン、字幕機能付き",
+    "creator": "淵野アタリ",
+    "tags": [
+      "soft"
+    ],
+    "image": "./works/FalceRig/unknown.png"
+  },
+  {
+    "title": "iMap",
+    "text": "旅行先でSNS用の現在地MAPを生成するアプリ",
+    "creator": "淵野アタリ",
+    "tags": [
+      "soft"
+    ],
+    "image": "./works/iMap/iMapScreenSample.jpg"
+  },
+  {
+    "title": "KagiMod for Koken",
+    "text": "工研用のKagiMod\nfelicaで認証して解錠&施錠します。",
+    "creator": "りんりん&Stearin",
+    "tags": [
+      "soft",
+      "hard"
+    ],
+    "image": "./works/KagiMod/KM4K.jpg"
+  },
+  {
+    "title": "Share Music Property",
+    "text": "Spotify API叩いて曲の名前とアーティストの名前を拾い、リンクと一緒にツイートできる",
+    "creator": "Azukibar",
+    "tags": [
+      "soft"
+    ],
+    "image": "./works/Music/unknown.png"
+  },
+  {
+    "title": "ピコピコハンド",
+    "text": "ハンドジェスチャーで動くリモコン",
+    "creator": "Void&Valkily",
+    "tags": [
+      "soft",
+      "hard"
+    ],
+    "image": "./works/Picopico/picopico.jpg"
+  },
+  {
+    "title": "進捗の墓",
+    "text": "進捗が死んだときに花の代わりのコンデンサーをお供えするお墓\n夜な夜な進捗の声が聞こえるとも言われており、進捗の声を聞くと進捗が出る",
+    "creator": "sheelfon",
+    "tags": [
+      "etc"
+    ],
+    "image": "./works/ProgressGrave/DSC_0159.JPG"
+  },
+  {
+    "title": "PWM速度制御基板",
+    "text": "調布祭プラレール企画で使用したPWM速度制御基板",
+    "creator": "SKMT",
+    "tags": [
+      "hard"
+    ],
+    "image": "./works/PWMSpeedController/unknown.png"
+  },
+  {
+    "title": "食神セタップ",
+    "text": "食神の定食のLINE注文を補助するアプリ",
+    "creator": "淵野アタリ",
+    "tags": [
+      "soft"
+    ],
+    "image": "./works/Shokujin/shokujinSetApp.png"
+  },
+  {
+    "title": "ステレオマイク",
+    "text": "ステレオなマイクです。ステレオなインターフェースで使えます。マイクアンプは市販のものです。電源はその辺からとれるように汎用的なものを使ってます。",
+    "creator": "sheelfon",
+    "tags": [
+      "hard"
+    ],
+    "image": "./works/StereoMic/DSC_0121.JPG"
+  },
+  {
+    "title": "ざるうどん",
+    "text": "小麦粉と水から作った、製麺機を使用",
+    "creator": "淵野アタリ",
+    "tags": [
+      "etc"
+    ],
+    "image": "./works/Udon/zaruUdon.jpg"
   }
 ]
