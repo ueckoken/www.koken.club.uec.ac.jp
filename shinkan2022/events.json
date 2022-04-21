@@ -28,5 +28,17 @@
     "date": "4/16(土) 13:00~15:00",
     "location": "オンライン",
     "other": "<a href=\"http://www.tech-shinkan.club.uec.ac.jp/\">詳細</a>"
+  },
+  {
+    "name": "定例部会",
+    "date": "4/22(金) 18:00~19:00",
+    "location": "Zoom or A棟403教室",
+    "other": "<a href=\"https://uec-tokyo.zoom.us/j/98221132442?pwd=UjJzaWJvRUxJeUgrbWpOQXlmaVAxdz09\">Zoom</a>"
+  },
+  {
+    "name": "Ruby講習",
+    "date": "4/22(金) 19:00~20:30",
+    "location": "Zoom or A棟403教室",
+    "other": "<a href=\"https://uec-tokyo.zoom.us/j/98221132442?pwd=UjJzaWJvRUxJeUgrbWpOQXlmaVAxdz09\">Zoom</a>"
   }
 ]
