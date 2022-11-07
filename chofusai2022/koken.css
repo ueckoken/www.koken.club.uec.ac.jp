@@ -1,0 +1,91 @@
+.main {
+    display: grid;
+    width: 100vh; height: 100vh;
+    grid-template-areas: 
+        "a h c"
+        "e b f"
+        "d d d";
+    grid-template-columns: 15em 55em 15em;
+    grid-template-rows: 8em 1fr 6.75em;
+}
+
+.box {
+    grid-area: e;
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    color: #fff;
+    background: #ff0000;
+    border-radius: 10px;
+    margin : 20px ;
+    padding : 10px ;
+}
+
+.box a {
+    margin: 0; 
+    padding: 0;
+}
+
+.linkbutton {
+    display: inline-block;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    margin: 1em;
+    border-radius: 0.5em;
+    text-align: center;
+    text-indent: 0;
+    color: #fff;
+    background-color: #ff0000;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%), 0 3px 1px -2px rgb(0 0 0 / 20%);
+}
+
+#link a{
+    color:lightgray;
+}
+
+.box2{
+    display: block;
+    grid-area: d;
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    text-align: right;
+    color: #fff;
+    background: #ff0000;
+    border-radius: 10px;
+    margin-left : 20px ;
+    padding : 10px ;
+}
+
+.sections{
+    grid-area: b;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+}
+
+.twitter{
+    grid-area: f;
+}
+
+#text p{
+    text-indent: 1rem;
+}
+
+header{
+    grid-area: h;
+}
+
+html {
+    display: block;
+}
+
+.ichigyou img{
+    vertical-align: middle;
+    display: inline-block;
+}
+.ichigyou span{
+    display: inline-block;
+}
