@@ -1,0 +1,5 @@
+<section>
+	<h4><!--作品名--></h4>
+	<img class="img-centering" src="#">
+	<p><!--説明文とか--></p>
+</section>
