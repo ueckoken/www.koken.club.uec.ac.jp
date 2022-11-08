@@ -76,6 +76,12 @@ body{
     padding-right: 0.4em;
 }
 
+section .img-centering img{
+    width: 100%;
+    max-width: 400px;
+    border-radius: 0.2em;
+}
+
 .twitter{
     grid-area: f;
 }
