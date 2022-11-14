@@ -1,10 +1,12 @@
-window.addEventListener("load",navmenu)
+window.addEventListener("load",twitter)
+function twitter(){
+    const h = document.body.clientWidth > 1200 ? document.getElementById("text").clientHeight : 500
+    document.getElementById("twittercontents").setAttribute("data-height", `${h}px`)
+}
 
-let hamburger;
-let nav;
 /*ハンバーガーメニューあれこれ*/
+window.addEventListener("load",navmenu)
 function navmenu(){
-    hamburger = document.getElementById("menu-btn-check");
     nav = document.getElementsByClassName('menucontents');
     for(let i=0; i<nav.length; i++){
         nav[i].addEventListener('click', checkout);
