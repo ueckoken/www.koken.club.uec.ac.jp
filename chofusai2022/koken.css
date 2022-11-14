@@ -96,6 +96,8 @@ body{
 #twitter{
     grid-area: f;
     margin: 5px;
+    display: grid;
+    align-items: stretch;
 }
 
 #text p{
@@ -176,7 +178,11 @@ header{
 
     #twitter{
         width: 450px;
+        height: 500px;
         margin: 0 auto 0 auto;
+    }
+    #twitter .twitter-timeline {
+        height: 500px;
     }
 }
 
