@@ -6,8 +6,8 @@ body{
 .main {
     display: grid;
     width:fit-content; height:100vh;
-    grid-template-areas: "a h c" "e b " "d d d";
-    grid-template-columns: 15em 55em 15em;
+    grid-template-areas: "a h c" "e b f" "d d f";
+    grid-template-columns: 1fr 55em 1fr;
     grid-template-rows: 8em 1fr 6.75em;
     margin: 0 auto;
 }
@@ -170,7 +170,7 @@ header{
     .main {
         grid-template-areas: "h h" "e b" "d d";
         grid-template-columns: 15em 50em;
-        grid-template-rows: 8em 1fr 1fr 6.75em;
+        grid-template-rows: 8em 1fr 6.75em;
     }
 
     header{
@@ -183,7 +183,7 @@ header{
         width: 100%;
         grid-template-areas: "h" "b" "d";
         grid-template-columns: 100%;
-        grid-template-rows: 8em 1fr 1fr 6.75em;
+        grid-template-rows: 8em 1fr 6.75em;
     }
     .box {
         display: none;
