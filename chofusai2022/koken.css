@@ -95,7 +95,9 @@ body{
 /*ツイッタータイムラインと格闘した跡*/
 #twitter{
     grid-area: f;
-    margin: 5px;
+    width: 450px;
+    height: 500px;
+    margin: 0 auto 0 auto;
     display: grid;
     align-items: stretch;
 }
@@ -174,12 +176,6 @@ header{
 
     header{
         margin-left: 20px;
-    }
-
-    #twitter{
-        width: 450px;
-        height: 500px;
-        margin: 0 auto 0 auto;
     }
 }
 
