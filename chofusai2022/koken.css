@@ -1,31 +1,33 @@
 body{
     display: block;
-    margin: 20px;
+    background-color: #fff;
 }
 
 .main {
     display: grid;
-    width: 100vh; height: 100vh;
-    grid-template-areas: 
-        "a h c"
-        "e b f"
-        "d d d";
+    width:fit-content; height:100vh;
+    grid-template-areas: "a h c" "e b f" "d d d";
     grid-template-columns: 15em 55em 15em;
     grid-template-rows: 8em 1fr 6.75em;
+    margin: 0 auto;
 }
 
 .small{
     display: none;
 }
 
+.hamburger-menu{
+    display:none;
+}
+
+/*ナビゲーションバーのやつ*/
 .box {
     display: inline-block;
     grid-area: e;
     padding: 0.5em 1em;
     margin: 2em 0;
     font-weight: bold;
-    color: #fff;
-    background: #ff0000;
+    background: #edf2f4;
     border-radius: 10px;
     margin: 20px;
     padding : 10px ;
@@ -36,6 +38,7 @@ body{
     padding: 0;
 }
 
+/*リンクのボタンのデザイン云々*/
 .linkbutton {
     display: inline-block;
     text-decoration: none;
@@ -52,10 +55,15 @@ body{
     box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%), 0 3px 1px -2px rgb(0 0 0 / 20%);
 }
 
-#link a{
-    color:lightgray;
+.linkbutton:hover,
+.linkbutton:focus {
+    background-color:#b60000;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+                0 1px 10px 0 rgba(0, 0, 0, 0.12),
+                0 2px 4px -1px rgba(0, 0, 0, 0.4);
 }
 
+/*footerのやつ*/
 .box2{
     display: block;
     grid-area: d;
@@ -76,14 +84,18 @@ body{
     padding-right: 0.4em;
 }
 
-section .img-centering img{
+/*画像関連*/
+#img-centering {
     width: 100%;
     max-width: 400px;
     border-radius: 0.2em;
+
 }
 
-.twitter{
+/*ツイッタータイムラインと格闘した跡*/
+#twitter{
     grid-area: f;
+    margin: 5px;
 }
 
 #text p{
@@ -94,10 +106,7 @@ header{
     grid-area: h;
 }
 
-html {
-    display: block;
-}
-
+/*タイトルロゴと文字をいい感じにしたかった*/
 .ichigyou img{
     vertical-align: middle;
     display: inline-block;
@@ -109,13 +118,54 @@ html {
     font-size: 40px;
 }
 
+/*アコーディオン*/
+.toggle {
+	display: none;
+}
+.Label {
+	padding: 1em;
+	display: block;
+	color: #fff;
+	background:#fa8888;
+}
+.Label::before{
+	content:"";
+	width: 6px;
+	height: 6px;
+	border-top: 2px solid #fff;
+	border-right: 2px solid #fff;
+	-webkit-transform: rotate(45deg);
+	position: absolute;
+	top:calc( 50% - 3px );
+	right: 20px;
+	transform: rotate(135deg);
+}
+.Label,
+.content {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transform: translateZ(0);
+	transition: all 0.3s;
+}
+.content {
+	height: 0;
+	margin-bottom:10px;
+	padding:0 20px;
+	overflow: hidden;
+    background-color: #edf2f4;
+}
+.toggle:checked + .Label + .content {
+	height: auto;
+	padding:20px ;
+	transition: all .3s;
+}
+.toggle:checked + .Label::before {
+	transform: rotate(-45deg) !important;
+}
+
 @media (max-width:1200px){
     .main {
-        grid-template-areas: 
-            "h h"
-            "e b"
-            "e f"
-            "d d";
+        grid-template-areas: "h h" "e b" "e f" "d d";
         grid-template-columns: 15em 50em;
         grid-template-rows: 8em 1fr 1fr 6.75em;
     }
@@ -123,42 +173,127 @@ html {
     header{
         margin-left: 20px;
     }
-    .twitter{
+
+    #twitter{
         width: 450px;
-        height: 500px;
+        margin: 0 auto 0 auto;
     }
 }
 
 @media (max-width:950px){
     .main {
         width: 100%;
-        grid-template-areas: 
-            "h"
-            "e"
-            "b"
-            "f"
-            "d";
+        grid-template-areas: "h" "b" "f" "d";
         grid-template-columns: 100%;
-        grid-template-rows: 8em 1fr 1fr 1fr 6.75em;
+        grid-template-rows: 8em 1fr 1fr 6.75em;
     }
     .box {
-        margin : 0px ;
-        padding : 0px ;
-    }
-    .box li{
-        float: left;
-        margin-right: 25px;
+        display: none;
     }
 
     .box2{
         margin-left: 0px;
     }
 
+    /*ハンバーガーメニュー*/
+    .hamburger-menu{
+        display: block;
+    }
+
+    .menu-btn {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        display: flex;
+        height: 60px;
+        width: 60px;
+        justify-content: center;
+        align-items: center;
+        z-index: 90;
+        background-color: #ff0000;
+    }
+
+    .menu-btn span,
+    .menu-btn span:before,
+    .menu-btn span:after {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 25px;
+        border-radius: 3px;
+        background-color: #ffffff;
+        position: absolute;
+    }
+    .menu-btn span:before {
+        bottom: 8px;
+    }
+    .menu-btn span:after {
+        top: 8px;
+    }
+
+    #menu-btn-check:checked ~ .menu-btn span {
+        background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+    }
+    #menu-btn-check:checked ~ .menu-btn span::before {
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+    #menu-btn-check:checked ~ .menu-btn span::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+
+    #menu-btn-check {
+        display: none;
+    }
+    
+    .menu-content {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 100%;/*leftの値を変更してメニューを画面外へ*/
+        z-index: 80;
+        background-color: #fa8888;
+        transition: all 0.5s;/*アニメーション設定*/
+    }
+    .menu-content ul {
+        padding: 70px 10px 0;
+    }
+    .menu-content ul li {
+        border-bottom: solid 1px #ffffff;
+        list-style: none;
+    }
+    .menu-content ul li a {
+        display: block;
+        width: 100%;
+        font-size: 15px;
+        box-sizing: border-box;
+        color:#ffffff;
+        text-decoration: none;
+        padding: 9px 15px 10px 0;
+        position: relative;
+    }
+    .menu-content ul li a::before {
+        content: "";
+        width: 7px;
+        height: 7px;
+        border-top: solid 2px #ffffff;
+        border-right: solid 2px #ffffff;
+        transform: rotate(45deg);
+        position: absolute;
+        right: 11px;
+        top: 16px;
+    }
+
+    #menu-btn-check:checked ~ .menu-content {
+        left: 0;/*メニューを画面内へ*/
+    }
 }
 
 @media (max-width:800px){
     .main{
-        grid-template-rows: 14em 1fr 1fr 1fr 6.75em;
+        grid-template-rows: 14em 1fr 1fr 6.75em;
     }
     .small{
         display: block;
@@ -168,5 +303,14 @@ html {
 @media (max-width:530px){
     .ichigyou{
         font-size: 35px;
+    }
+}
+
+@media (max-width:400px){
+    .ichigyou{
+        font-size: 29px;
+    }
+    #twitter{
+        width: 100%;
     }
 }
