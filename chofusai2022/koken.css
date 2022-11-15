@@ -169,7 +169,7 @@ header{
 @media (max-width:1200px){
     .main {
         grid-template-areas: "a h" "e b" "d d";
-        grid-template-columns: 15em 50em;
+        grid-template-columns: 1fr 50em;
         grid-template-rows: 8em 1fr 6.75em;
     }
 }
