@@ -2,8 +2,8 @@
 window.addEventListener("load",navmenu)
 function navmenu(){
     const nav = document.getElementsByClassName('menucontents');
-    for(let i=0; i<nav.length; i++){
-        nav[i].addEventListener('click', checkout);
+    for (const element of nav){
+        element.addEventListener('click', checkout);
     }
 }
 function checkout(){
