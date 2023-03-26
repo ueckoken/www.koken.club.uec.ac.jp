@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta name="theme-color" content="#ff0000">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+  <title>工学研究部 - 新歓2022特設サイト</title>
+  <link rel="shortcut icon" href="../img/kokenLogo.ico">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ueckoken">
+  <meta property="og:url" content="https://www.koken.club.uec.ac.jp/chofusai2021/">
+  <meta property="og:title" content="電気通信大学工学研究部 - 新歓2022特設サイト">
+  <meta property="og:description" content="新歓2022の工研特設サイトです">
+  <meta property="og:image" content="https://www.koken.club.uec.ac.jp/shinkan2022/fig/thumnail.jpg">
+  <!--  BootStrap5 CSS-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!--  Custom CSS-->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+<div class="main" id="app">
+  <header>
+    <!--    背景画像スライド  -->
+    <div id="header-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
+      <div class="carousel-inner">
+        <!-- ヘッダーコンテンツ -->
+        <div class="content-wrapper">
+          <!-- 工研ロゴ -->
+          <img src="./fig/logo.svg" alt="logo" class="logo"/>
+          <a href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+        <div class="carousel-item active">
+          <img src="/img/server.jpg" alt="server">
+        </div>
+        <div class="carousel-item">
+          <img src="/img/electronic.jpg" alt="electronic">
+        </div>
+        <div class="carousel-item">
+          <img src="/img/network.jpg" alt="network">
+        </div>
+        <div class="carousel-item">
+          <img src="/img/machine.jpg" alt="machine">
+        </div>
+        <div class="carousel-item">
+          <img src="/img/toppic1.jpg" alt="toppic1">
+        </div>
+        <div class="carousel-item">
+          <img src="/img/toppic2.jpg" alt="toppic2">
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="py-2">
+      <section id="news" class="container pt-5">
+        <h2>News</h2>
+        <ul class="list-group list-group-flush news py-1">
+          <li class="list-group-item">2021.4.4
+            <span>工研2022新入生歓迎特設サイトをオープンしました！</span>
+          </li>
+          <li class="list-group-item">2021.4.7
+            <span>4/8,4/15部会のZoom情報を掲載しました！</span>
+          </li>
+        </ul>
+      </section>
+      <section id="about">
+        <div class="container">
+          <h2>工学研究部とは？</h2>
+          <p>
+            工学研究部は<b>大学公認</b>の、部員が一人ひとり作りたいものを作る技術系サークルです。
+            <br>
+            ハードウェアからソフトウェアまで工学において幅広く活動しています。<br>
+            サークル棟2階にある部室は電子部品が棚を埋め尽くし、複数台のサーバーが常に稼働し、加工機や3Dプリンターが設置されており、工学研究部員の活動拠点となっています。
+          </p>
+          <h5>主な活動内容</h5>
+          <p>
+            電子工作、
+            機械工作、
+            3D工作、
+            プログラミング、
+            IoT、
+            マイコン、
+            Webアプリ、
+            Cloud Computing、
+            サーバー、
+            ネットワーク、
+            FPGA・CPLD、
+            手芸・裁縫、
+            料理<br>
+            <b>その他工学に関することなんでも</b>
+          </p>
+        </div>
+        <h5 class="text-center">工研紹介動画</h5>
+        <div class="youtube">
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/OgtSbhXeUhg?rel=0&"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+        </div>
+      </section>
+      <section id="events">
+        <div class="container">
+          <h2>新歓イベント情報</h2>
+          <p>工学研究部が実施又は参加する新歓イベントの一覧です（随時更新）<br>
+          掲載しているZoomはUECクラウドアカウント限定です</p>
+          <table class="table">
+            <thead>
+            <tr>
+              <th scope="col" class="w-25">日時</th>
+              <th scope="col">内容</th>
+              <th scope="col">場所</th>
+              <th scope="col">その他</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr v-for="event in events">
+              <th scope="row">{{ event.date }}</th>
+              <td>{{ event.name }}</td>
+              <td>{{ event.location }}</td>
+              <td v-html="event.other"></td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section id="join">
+        <div class="container">
+          <h2>入部方法</h2>
+          <p>
+            毎週金曜日に実施される部会にて入部届を配布しています。<br>
+            入部希望の方は毎週金曜日に実施している定例部会へお越しください。<br>
+          </p>
+          <h4>部費</h4>
+          <p>
+            学部1年<span style="padding-left:1rem;">半期5000円</span><br>
+            その他<span style="padding-left:1.5rem;">半期6000円</span><br>
+          </p>
+        </div>
+      </section>
+      <section id="year">
+        <div class="container">
+          <h2>工学研究部の活動(昨年度)</h2>
+          <div style="padding-left:1em;">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <h3>5月 新入生講習</h3>
+                <p>
+                  新入生に向けて、ソフトウェア講習（Ruby・C言語）とハードウェア講習を実施しました。<br>
+                  ソフトウェア講習では基本制御構文から始まり基礎的な内容の演習を行いました。
+                  ハードウェア講習では基礎的な電子素子の仕組みを知り、トランジスタやICを用いて発振回路などをブレッドボード上に作成する演習を行いました。
+                </p>
+              </div>
+              <div class="col-12 col-md-6 py-1">
+                <img src="fig/koshu.png" class="img-thumbnail">
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <h3>9月 オンライン合宿</h3>
+                <p>
+                  例年実施していた合宿が新型コロナウイルスにより中止されたため、今年はオンラインで合宿を実施しました。
+                  部員が様々なテーマで講習を実施したりしました。
+                </p>
+              </div>
+              <div class="col-12 col-md-6 py-1">
+                <img src="fig/gassyuku.png" class="img-thumbnail">
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <h3>9月 工研コンテスト</h3>
+                <p>
+                  部内でソフトウェア・ハードウェア部門に分かれてコンテストを実施しました。
+                  合計21の作品がエントリーされ、参加者による審査によって各部門や総合・新人賞などが決定されました！
+                </p>
+              </div>
+              <div class="col-12 col-md-6 py-1">
+                <img src="fig/Contest.png" class="img-thumbnail">
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <h3>11月 調布祭</h3>
+                <p>
+                  工研では去年に引き続き鉄道研究会と合同でプラレール企画を実施しました。
+                  来場者がオンラインでプラレールを操作することができ、その様子をYouTube Liveで配信しました。<br>
+                  その他、部員が作成した作品の展示も行いました。
+                </p>
+              </div>
+              <div class="col-12 col-md-6">
+                <img src="fig/prarail.png" class="img-thumbnail">
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <h3>2月 工研LT</h3>
+                <p>
+                  各自が持ち寄ったテーマで部内でLT会を実施しました。
+                </p>
+              </div>
+              <div class="col-12 col-md-6">
+                <img src="fig/LT.png" class="img-thumbnail">
+              </div>
+            </div>
+          </div>
+          <hr>
+          この他にも、工学研究部では定期的に部員の成果をまとめた部報(<a href="https://www.koken.club.uec.ac.jp/docs.html">過去の部報</a>)を発行し、
+          <a href="https://techbookfest.org/organization/5683127032741888">技術書典</a>やMaker Fairなど各種イベントへの参加も行っています！
+        </div>
+      </section>
+      <section id="info">
+        <div class="container">
+          <h2>活動情報</h2>
+          <p>
+            活動日<span style="padding-left:1rem;">いつでも</span><br>
+            部　室<span style="padding-left:1rem;">サークル棟2階 製作室（黄色と黒の警告色のドアが目印です）</span><br>
+            部　会<span style="padding-left:1rem;">毎週金曜日18:00</span><br>
+            Twitter<span style="padding-left:1rem;"><a href="https://twitter.com/ueckoken">@ueckoken</a></span><br>
+            メール<span style="padding-left:1rem;"><a href="mailto:koken.shinkan@gmail.com">koken.shinkan@gmail.com</a></span>
+          </p>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="container">
+          <h2>お問い合わせ</h2>
+          <p>
+            <a href="mailto:koken.shinkan@gmail.com">メール</a>または
+            <a href="https://twitter.com/ueckoken">Twitter</a>で承っています。
+            工研に関する質問などお気軽にお問い合わせください！<br>
+            また、工学研究部では部室での活動の他に<a href="https://t.co/KnPY2oGokc">Discord</a>を用いてオンラインでも活動しています。<br>
+            こちらでは部員でなくても入れますのでお気軽にどうぞ！
+          </p>
+        </div>
+      </section>
+      <section id="works-intro" class="bg-light">
+        <div class="container py-2">
+          <h2 class="text-center">作品紹介</h2>
+          <p class="text-center">
+            部員が制作した作品の一部を紹介します
+          </p>
+          <div class="checkbox py-2">
+            <input type="checkbox" id="soft" value="soft" v-model="checkedTags">
+            <label for="soft"><span class="badge bg-secondary">software</span></label>
+            <input type="checkbox" id="hard" value="hard" v-model="checkedTags">
+            <label for="hard"><span class="badge bg-primary">hardware</span></label>
+            <input type="checkbox" id="etc" value="etc" v-model="checkedTags">
+            <label for="etc"><span class="badge bg-success">extra</span></label>
+          </div>
+          <div id="works">
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-2">
+              <div class="col" v-for="(work,index) in checkedWorks" :key="index">
+                <div class="card rounded-3 p-2 bg-light">
+                  <span class="title">{{ work.title }}</span>
+                  <small class="creator">Created by <b>{{ work.creator }}</b></small>
+                  <img class="card-img-top rounded" :src="work.image" :alt="work.title" width="100%">
+                  <div class="card-body">
+                    <p v-html="work.text" style="padding-left: 0;">
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="text-center py-4">
+      <img src="fig/logo.svg" width="200" height="75" alt="koken-logo"><br>
+      Copyright© 2022 UEC Koken All Rights Reserved.
+    </div>
+  </footer>
+</div>
+<!--Boostrap Bundle with Popper-->
+<script src="js/bootstrap.bundle.min.js"></script>
+<!--Vue.js-->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+<!--Vue lazy-load-->
+<script src="https://unpkg.com/vue-lazyload/vue-lazyload.js"></script>
+<script type="text/javascript">
+    Vue.use(VueLazyload, {
+        preLoad: 1.3,
+    });
+    new Vue({
+        el: "#app",
+        computed: {
+            sortedWorksByCreator() {
+                return this.works.sort((a, b) => {
+                    const creatorA = a.creator.toUpperCase();
+                    const creatorB = b.creator.toUpperCase();
+                    if (creatorA < creatorB) {
+                        return -1;
+                    } else if (creatorA > creatorB) {
+                        return 1;
+                    } else {
+                        return 0;
+                    }
+                });
+            },
+            randomizedWorks() {
+                return this.works.sort(() => Math.random() - 0.5);
+            },
+            checkedWorks() {
+                if (this.checkedTags.length === 0) {
+                    return this.randomizedWorks;
+                }
+                return this.works.filter(work => {
+                    return this.checkedTags.some(tag => work.tags.includes(tag));
+                });
+            }
+        },
+        methods: {
+            isContainTag(tags) {
+                tags.forEach(tag => {
+                    if (this.checkedTags.includes(tag)) {
+                        return true;
+                    }
+                });
+                return false
+            }
+        },
+        data: {
+            checkedTags: [],
+            works: [],
+            events: []
+        },
+        async mounted() {
+            this.works = await (await fetch('works.json')).json();
+            this.events = await (await fetch('events.json')).json();
+        }
+    });
+</script>
+</body>
+
+</html>
