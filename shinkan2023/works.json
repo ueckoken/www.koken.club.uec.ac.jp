@@ -1,12 +1,162 @@
 [
   {
-    "title": "ピコピコハンド",
-    "text": "ハンドジェスチャーで動くリモコン",
-    "creator": "Void&Valkyrie",
+    "title": "CO2アラート",
+    "text": "部室のCO2濃度を監視してパトランプで換気を促してくれるIoTシステムです。Grafanaでデータの可視化も対応。",
+    "creator": "ぼいど",
     "tags": [
       "soft",
       "hard"
     ],
-    "image": "./works/Picopico/picopico.jpg"
+    "image": "./works/co2_alert/co2_alert.jpg"
+  },
+  {
+    "title": "プラレールで衝突防止システム",
+    "text": "Spresenseを使って前方の障害物をカメラで検知して自動停止するプラレールです。停止した時に、ELTRES経由でDiscordに位置情報の通知が送られます。(<a href='https://youtu.be/9j7SetNHvoE'>YouTube/a>)",
+    "creator": "きえん、スバル、ぼいど",
+    "tags": [
+      "soft",
+      "hard"
+    ],
+    "image": "./works/plarail_system/plarail_system.jpg"
+  },
+  {
+    "title": "FPGAライントレーサ",
+    "text": "FPGAを用いてライントレーサを作りました。ハードウェアで高速なフィードバックを実現...?",
+    "creator": "ぼいど",
+    "tags": [
+      "hard"
+    ],
+    "image": "./works/line_tracer/line_tracer.jpg"
+  },
+  {
+    "title": "FPGAオーディオビジュアライザ",
+    "text": "入力された音源からFFTで周波数成分ごとに分解して棒グラフで表示します。（ビジュアライズ部分を実装）",
+    "creator": "ぼいど",
+    "tags": [
+      "soft",
+      "hard"
+    ],
+    "image": "./works/audio_visualizer/audio_visualizer.png"
+  },
+  {
+    "title": "つまみロボ(試作)",
+    "text": "",
+    "creator": "スバル",
+    "tags": [
+      "hard"
+    ],
+    "image": "./works/tsumami_robo/tsumami_robo.jpg"
+  },
+  {
+    "title": "Wiiリモコンみたいなマウス",
+    "text": "プレゼンでイキれる。(<a href='https://twitter.com/lnln_ch/status/1626096029157453824?s=20'>Twitter</a>)",
+    "creator": "りんりん",
+    "tags": [
+      "hard"
+    ],
+    "image": "./works/wii_mouse/wii_mouse.jpg"
+  },
+  {
+    "title": "プログラミングで作った画像",
+    "text": "",
+    "creator": "ゆっきー",
+    "tags": [
+      "soft"
+    ],
+    "image": "./works/program_photo/program_photo.png"
+  },
+  {
+    "title": "レバーレスアーケードコントローラー",
+    "text": "",
+    "creator": "hosi",
+    "tags": [
+      "hard"
+    ],
+    "image": "./works/akekon/akekon.jpg"
+  },
+
+  {
+    "title": "部室のドアについてるLEDディスプレイ",
+    "text": "スマホやPCから好きな文字を表示できる",
+    "creator": "りんりん",
+    "tags": [
+      "soft",
+      "hard"
+    ],
+    "image": "./works/led_display/led_display.jpg"
+  },
+  {
+    "title": "KagiMod for Koken",
+    "text": "部室のカギをsuicaで開けられます",
+    "creator": "りんりん",
+    "tags": [
+      "soft",
+      "hard"
+    ],
+    "image": "./works/kagimod/kagimod.jpg"
+  },
+
+  {
+    "title": "ICPコントローラ",
+    "text": "F-16に搭載されているICPというキーボードユニットです",
+    "creator": "ねむろ",
+    "tags": [
+      "hard"
+    ],
+    "image": "./works/icp_controller/icp_controller.jpg"
+  },
+
+  {
+    "title": "動くしっぽ",
+    "text": "(<a href='https://twitter.com/lnln_ch/status/1571454142551592968?s=20'>Twitter</a>)",
+    "creator": "りんりん",
+    "tags": [
+      "hard"
+    ],
+    "image": "./works/ugokushippo/ugokushippo.jpg"
+  },
+
+  {
+    "title": "うねうねロボ",
+    "text": "うねうね動くロボ(<a href='https://twitter.com/lnln_ch/status/1536716253103984642?s=20'>Twitter</a>)",
+    "creator": "りんりん",
+    "tags": [
+      "soft",
+      "hard"
+    ],
+    "image": "./works/uneune/uneune.jpg"
+  },
+
+  {
+    "title": "オシロお絵描き",
+    "text": "オシロスコープにいい感じの波形を頑張って入力して絵を描きました",
+    "creator": "りんりん",
+    "tags": [
+      "soft"
+    ],
+    "image": "./works/oshiro_oekaki/oshiro_oekaki.jpg"
+  },
+
+  {
+    "title": "植物と喋ろう",
+    "text": "",
+    "creator": "スバル",
+    "tags": [
+      "soft",
+      "hard"
+    ],
+    "image": "./works/syokubutsu/syokubutsu.jpg"
+  },
+
+  {
+    "title": "ラジコンプラレール",
+    "text": "",
+    "creator": "スバル",
+    "tags": [
+      "soft",
+      "hard"
+    ],
+    "image": "./works/rajikon_plarail/rajikon_plarail.jpg"
   }
+
 ]
