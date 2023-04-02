@@ -159,4 +159,24 @@
     "image": "./works/rajikon_plarail/rajikon_plarail.jpg"
   }
 
+  {
+    "title": "謁見の光のスペクトルの不確かさを求めてくれるサイト",
+    "text": "D棟爆破機能をつけることで、光のスペクトルの実験がある人だけでなく、 謁見履修者全員を救うことを可能にした。",
+    "creator": "へるくん",
+    "tags": [
+      "soft"
+    ],
+    "image": "./works/light_spectrum/light_spectrum.png"
+  }
+
+  {
+    "title": "単位之墓",
+    "text": "落単した単位を供養できる。",
+    "creator": "へるくん",
+    "tags": [
+      "hard"
+    ],
+    "image": "./works/taninohaka/taninohaka.png"
+  }
+
 ]
