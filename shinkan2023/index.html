@@ -3,14 +3,14 @@
 <head>
   <meta name="theme-color" content="#ff0000">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
-  <title>工学研究部 - 新歓2023特設サイト</title>
+  <title>電気通信大学工学研究部 - 新入生歓迎会2023特設サイト</title>
   <link rel="shortcut icon" href="../img/kokenLogo.ico">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@ueckoken">
   <meta property="og:url" content="https://www.koken.club.uec.ac.jp/shinkan2023/">
-  <meta property="og:title" content="電気通信大学工学研究部 - 新歓2023特設サイト">
-  <meta property="og:description" content="新歓2023の工研特設サイトです">
+  <meta property="og:title" content="電気通信大学工学研究部 - 新入生歓迎会2023特設サイト">
+  <meta property="og:description" content="活動内容や新歓イベントを紹介します。">
   <meta property="og:image" content="https://www.koken.club.uec.ac.jp/shinkan2023/fig/thumnail.jpg">
   <!--  BootStrap5 CSS-->
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -27,7 +27,7 @@
         <!-- ヘッダーコンテンツ -->
         <div class="content-wrapper">
           <!-- 工研ロゴ -->
-          <img src="./fig/logo.svg" alt="logo" class="logo"/>
+          <h1><img src="./fig/logo.svg" alt="電気通信大学 工学研究部" class="logo"/></h1>
           <a href="#">
             <span></span>
             <span></span>
@@ -55,44 +55,41 @@
       </div>
     </div>
   </header>
+
   <main>
     <div class="py-2">
       <section id="news" class="container pt-5">
-        <h2>News</h2>
+        <h2>お知らせ</h2>
         <ul class="list-group list-group-flush news py-1">
           <li class="list-group-item">2023.4.2
-            <span>工研2023新入生歓迎特設サイトをオープンしました！</span>
+            <span>新入生歓迎会2023特設サイトをオープンしました！</span>
           </li>
         </ul>
       </section>
       <section id="about">
         <div class="container">
           <h2>工学研究部とは？</h2>
-          <p>
-            工学研究部は<b>大学公認</b>の、部員が一人ひとり作りたいものを作る技術系サークルです。
-            <br>
-            ハードウェアからソフトウェアまで工学において幅広く活動しています。<br>
-            サークル棟2階にある部室は電子部品が棚を埋め尽くし、複数台のサーバーが常に稼働し、加工機や3Dプリンターが設置されており、工学研究部員の活動拠点となっています。
-          </p>
-          <h5>主な活動内容</h5>
-          <p>
-            電子工作、
-            機械工作、
-            3D工作、
-            プログラミング、
-            IoT、
-            マイコン、
-            Webアプリ、
-            Cloud Computing、
-            サーバー、
-            ネットワーク、
-            FPGA・CPLD、
-            手芸・裁縫、
-            料理<br>
-            <b>その他工学に関することなんでも</b>
-          </p>
+          <p>工学研究部は部員がそれぞれモノづくりをする技術系の<b>大学公認</b>サークルです。ハードウェアからソフトウェアまで幅広く活動しています。</p>
+          <p>棚いっぱいの電子部品や常時稼働しているサーバー、加工機、3Dプリンターなどの設備で部員の活動をサポートします。</p>
+          <h3>主な活動内容</h3>
+          <ul>
+            <li>電子工作</li>
+            <li>機械工作</li>
+            <li>3D工作</li>
+            <li>プログラミング</li>
+            <li>IoT</li>
+            <li>マイコン</li>
+            <li>Webアプリ</li>
+            <li>Cloud Computing</li>
+            <li>サーバー</li>
+            <li>ネットワーク</li>
+            <li>FPGA・CPLD</li>
+            <li>手芸・裁縫</li>
+            <li>料理</li>
+          </ul>
+          <p><b>その他工学に関することならなんでも</b></p>
         </div>
-        <h5 class="text-center">工研紹介動画</h5>
+        <h5 class="text-center">活動紹介動画</h5>
         <div class="youtube">
           <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/OgtSbhXeUhg?rel=0&"
                   title="YouTube video player" frameborder="0"
@@ -100,55 +97,56 @@
                   allowfullscreen></iframe>
         </div>
       </section>
+
       <section id="events">
         <div class="container">
           <h2>新歓イベント情報</h2>
-          <p>工学研究部が実施又は参加する新歓イベントの一覧です（随時更新）<br>
-          掲載しているZoomはUECクラウドアカウント限定です</p>
+          <p>工学研究部が実施または参加する新歓イベントの一覧です(随時更新)。</p>
+          <p>ZoomのURLはUECクラウドアカウント限定です。</p>
           <table class="table">
             <thead>
-            <tr>
-              <th scope="col" class="w-25">日時</th>
-              <th scope="col">内容</th>
-              <th scope="col">場所</th>
-              <th scope="col">その他</th>
-            </tr>
+              <tr>
+                <th scope="col" class="w-25">日時</th>
+                <th scope="col">内容</th>
+                <th scope="col">場所</th>
+                <th scope="col">その他</th>
+              </tr>
             </thead>
             <tbody>
-            <tr v-for="event in events">
-              <th scope="row">{{ event.date }}</th>
-              <td>{{ event.name }}</td>
-              <td>{{ event.location }}</td>
-              <td v-html="event.other"></td>
-            </tr>
+              <tr v-for="event in events">
+                <th scope="row">{{ event.date }}</th>
+                <td>{{ event.name }}</td>
+                <td>{{ event.location }}</td>
+                <td v-html="event.other"></td>
+              </tr>
             </tbody>
           </table>
         </div>
       </section>
+
       <section id="join">
         <div class="container">
           <h2>入部方法</h2>
-          <p>
-            毎週金曜日に実施される部会にて入部届を配布しています。<br>
-            入部希望の方は毎週金曜日に実施している定例部会へお越しください。<br>
-          </p>
-          <h4>部費</h4>
-          <p>
-            学部1年<span style="padding-left:1rem;">半期5000円</span><br>
-            その他<span style="padding-left:2rem;">半期6000円</span><br>
-          </p>
+          <p>毎週金曜日に実施する部会で入部届を配布しています。</p>
+          <h3>部費</h3>
+          <p>半期ごとの額です。</p>
+          <table>
+            <tr><th>学部1年生</th><td>5000円</td></tr>
+            <tr><th>その他</th><td>6000円</td></tr>
+          </table>
         </div>
       </section>
+
       <section id="year">
         <div class="container">
-          <h2>工学研究部の活動(昨年度)</h2>
+          <h2>活動内容(昨年度)</h2>
           <div style="padding-left:1em;">
             <div class="row">
               <div class="col-12 col-md-6">
                 <h3>5月 新入生講習</h3>
+                <p>新入生を対象にソフトウェアとハードウェアの基本的な内容を上級生が教えます。</p>
                 <p>
-                  新入生に向けて、ソフトウェア講習（Ruby・C言語）とハードウェア講習を実施しました。<br>
-                  ソフトウェア講習では基本制御構文から始まり基礎的な内容の演習を行いました。
+                  ソフトウェア講習(Ruby・C言語)では基本制御構文から始まり、基礎的な内容の演習を行いました。
                   ハードウェア講習ではトランジスタやICなどの基礎的な電子素子の仕組みの紹介をし、実際に回路を作成する演習を実施しました。
                 </p>
               </div>
@@ -159,10 +157,9 @@
             <hr>
             <div class="row">
               <div class="col-12 col-md-6">
-                <h3>8月 9月 合宿</h3>
-                <p>
-                  神奈川県藤沢市にある大学の宿泊施設、<a href="http://gakusei.office.uec.ac.jp/hukuri/hamami/hamamiryou.html">浜見寮</a>で合宿を行いました。部員がさまざまな分野の講習を行ったり、観光をしたりしました。
-                </p>
+                <h3>8, 9月 合宿</h3>
+                <p>寝食を共にしながら互いに様々な分野の講習を行います。</p>
+                <p>2022年度は<a href="http://gakusei.office.uec.ac.jp/hukuri/hamami/hamamiryou.html">浜見寮</a>(神奈川県藤沢市)で花火や海水浴、江ノ島/鎌倉観光なども楽しみました。</p>
               </div>
               <div class="col-12 col-md-6 py-1">
                 <img src="fig/hamami.png" class="img-thumbnail">
@@ -172,10 +169,8 @@
             <div class="row">
               <div class="col-12 col-md-6">
                 <h3>10月 工研コンテスト</h3>
-                <p>
-                  部内でソフトウェア・ハードウェア部門に分かれてコンテストを実施しました。
-                  合計19の作品がエントリーされ、参加者による審査によって各部門や総合・新人賞などが決定されました！
-                </p>
+                <p>ソフトウェア部門とハードウェア部門に分かれて作品アイデアを発表するコンテストです。</p>
+                <p>合わせて19のエントリーがあり、投票で優秀賞や新人賞などを受賞した人には景品が贈られました！</p>
               </div>
               <div class="col-12 col-md-6 py-1">
                 <img src="fig/Contest.png" class="img-thumbnail">
@@ -185,11 +180,10 @@
             <div class="row">
               <div class="col-12 col-md-6">
                 <h3>11月 調布祭</h3>
+                <p>学園祭で部員の作品を展示します。</p>
                 <p>
-                  工研では去年に引き続き鉄道研究会と合同でプラレール企画を実施しました。
-                  来場者がコントローラーでプラレールを操作することができ、その様子をYouTube Liveで配信しました。
-                  <br>
-                  その他、部員が作成した作品の展示も行いました。
+                  去年に引き続き、鉄道研究会と合同でプラレール企画を実施しました。
+                  来場者がWEB上のコントローラーで分岐器を操作できます。その様子をYouTube Liveで配信しました。
                 </p>
               </div>
               <div class="col-12 col-md-6">
@@ -200,9 +194,7 @@
             <div class="row">
               <div class="col-12 col-md-6">
                 <h3>4月 工研LT</h3>
-                <p>
-                  各自が持ち寄ったテーマで部内でLT会を実施しました。
-                </p>
+                <p>各自が持ち寄ったテーマで行うプレゼン会です。</p>
               </div>
               <div class="col-12 col-md-6">
                 <!--<img src="fig/LT.png" class="img-thumbnail">-->
@@ -210,40 +202,36 @@
             </div>
           </div>
           <hr>
-          この他にも、工学研究部では定期的に部員の成果をまとめた部報(<a href="https://www.koken.club.uec.ac.jp/docs.html">過去の部報</a>)を発行し、
-          <a href="https://techbookfest.org/organization/5683127032741888">技術書典</a>やMaker Fairなど各種イベントへの参加も行っています！
+          <p>これらの他にも部員の成果をまとめた<a href="https://www.koken.club.uec.ac.jp/docs.html">部報</a>を定期的に発行し、
+          <a href="https://techbookfest.org/organization/5683127032741888">技術書典</a>やMaker Fairなど各種イベントに参加しています！</p>
         </div>
       </section>
+
       <section id="info">
         <div class="container">
           <h2>活動情報</h2>
-          <p>
-            活動日<span style="padding-left:1rem;">いつでも</span><br>
-            部　室<span style="padding-left:1rem;">サークル棟2階 製作室（黄色と黒の警告色のドアが目印です）</span><br>
-            部　会<span style="padding-left:1rem;">毎週金曜日18:00</span><br>
-            Twitter<span style="padding-left:1rem;"><a href="https://twitter.com/ueckoken">@ueckoken</a></span><br>
-            メール<span style="padding-left:1rem;"><a href="mailto:koken.shinkan@gmail.com">koken.shinkan@gmail.com</a></span>
-          </p>
+          <table>
+            <tr><th>活動日</th><td>いつでも</td></tr>
+            <tr><th>部室</th><td>サークル棟2階 製作室(黄色と黒の警告色のドアが目印です)</td></tr>
+            <tr><th>部会</th><td>毎週金曜日18:00より</td></tr>
+            <tr><th>Twitter</th><td><a href="https://twitter.com/ueckoken">@ueckoken</a></td></tr>
+            <tr><th>メール</th><td><a href="mailto:koken.shinkan@gmail.com">koken.shinkan@gmail.com</a></td></tr>
+          </table>
         </div>
       </section>
+
       <section id="contact">
         <div class="container">
           <h2>お問い合わせ</h2>
-          <p>
-            <a href="mailto:koken.shinkan@gmail.com">メール</a>または
-            <a href="https://twitter.com/ueckoken">Twitter</a>で承っています。
-            工研に関する質問などお気軽にお問い合わせください！<br>
-            また、工学研究部では部室での活動の他に<a href="https://t.co/KnPY2oGokc">Discord</a>を用いてオンラインでも活動しています。<br>
-            こちらでは部員でなくても入れますのでお気軽にどうぞ！
-          </p>
+          <p><a href="mailto:koken.shinkan@gmail.com">メール</a>または<a href="https://twitter.com/ueckoken">Twitter</a>で受け付けています。</p>
+          <p><a href="https://t.co/KnPY2oGokc">Discordサーバー</a>もあります。入部しなくても参加できるのでお気軽にどうぞ！</p>
         </div>
       </section>
+
       <section id="works-intro" class="bg-light">
         <div class="container py-2">
           <h2 class="text-center">作品紹介</h2>
-          <p class="text-center">
-            部員が制作した作品の一部を紹介します
-          </p>
+          <p class="text-center">部員の作品の一部を紹介します。</p>
           <div class="checkbox py-2">
             <input type="checkbox" id="soft" value="soft" v-model="checkedTags">
             <label for="soft"><span class="badge bg-secondary">software</span></label>
@@ -271,6 +259,7 @@
       </section>
     </div>
   </main>
+  
   <footer>
     <div class="text-center py-4">
       <img src="fig/logo.svg" width="200" height="75" alt="koken-logo"><br>
