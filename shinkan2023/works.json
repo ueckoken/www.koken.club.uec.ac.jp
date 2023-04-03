@@ -11,7 +11,7 @@
   },
   {
     "title": "プラレールで衝突防止システム",
-    "text": "Spresenseを使って前方の障害物をカメラで検知して自動停止するプラレールです。停止した時に、ELTRES経由でDiscordに位置情報の通知が送られます。(<a href='https://youtu.be/9j7SetNHvoE'>YouTube/a>)",
+    "text": "Spresenseを使って前方の障害物をカメラで検知して自動停止するプラレールです。停止した時に、ELTRES経由でDiscordに位置情報の通知が送られます。(<a href='https://youtu.be/9j7SetNHvoE'>YouTube</a>)",
     "creator": "きえん、スバル、ぼいど",
     "tags": [
       "soft",
@@ -161,7 +161,7 @@
 
   {
     "title": "謁見の光のスペクトルの不確かさを求めてくれるサイト",
-    "text": "D棟爆破機能をつけることで、光のスペクトルの実験がある人だけでなく、 謁見履修者全員を救うことを可能にした。",
+    "text": "D棟爆破機能をつけることで、光のスペクトルの実験がある人だけでなく、謁見履修者全員を救うことを可能にした。(<a href='https://hel-kun.github.io/light_spectrum/'>サイト</a>)",
     "creator": "へるくん",
     "tags": [
       "soft"
@@ -177,6 +177,26 @@
       "hard"
     ],
     "image": "./works/taninohaka/taninohaka.png"
+  },
+
+  {
+    "title": "豚骨ラーメン",
+    "text": "淵野アタリが製麺してごっちが圧力鍋でスープとチャーシューを作った",
+    "creator": "ごっち、淵野アタリ",
+    "tags": [
+      "etc"
+    ],
+    "image": "./works/ramen/ramen.jpg"
+  },
+
+  {
+    "title": "妖夢のコスプレ",
+    "text": "ソフトなウェアで作ったハードウェア",
+    "creator": "たむ",
+    "tags": [
+      "etc"
+    ],
+    "image": "./works/yomu/yomu.jpg"
   }
 
 ]
