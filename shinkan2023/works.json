@@ -197,6 +197,216 @@
       "etc"
     ],
     "image": "./works/yomu/yomu.jpg"
+  },
+
+  {
+    "title": "お好み焼き",
+    "text": "",
+    "creator": "淵野アタリ",
+    "tags": [
+      "etc"
+    ],
+    "image": "./works/udon0/udon0.jpg"
+  },
+
+  {
+    "title": "ちくわぶ",
+    "text": "",
+    "creator": "淵野アタリ",
+    "tags": [
+      "etc"
+    ],
+    "image": "./works/udon1/udon1.jpg"
+  },
+
+  {
+    "title": "ピザ",
+    "text": "撮影モデルはごっち。",
+    "creator": "淵野アタリ",
+    "tags": [
+      "etc"
+    ],
+    "image": "./works/udon2/udon2.jpg"
+  },
+
+  {
+    "title": "うどん",
+    "text": "製麺機で小麦粉から作った。",
+    "creator": "淵野アタリ",
+    "tags": [
+      "etc"
+    ],
+    "image": "./works/udon3/udon3.jpg"
+  },
+
+  {
+    "title": "もんじゃ焼き",
+    "text": "もっと火力が欲しい。",
+    "creator": "淵野アタリ",
+    "tags": [
+      "etc"
+    ],
+    "image": "./works/udon4/udon4.jpg"
+  },
+
+  {
+    "title": "すいとん",
+    "text": "",
+    "creator": "淵野アタリ",
+    "tags": [
+      "etc"
+    ],
+    "image": "./works/udon5/udon5.jpg"
+  },
+
+  {
+    "title": "カレー",
+    "text": "赤缶と小麦粉を炒めてルウから作った。",
+    "creator": "淵野アタリ",
+    "tags": [
+      "etc"
+    ],
+    "image": "./works/udon6/udon6.jpg"
+  },
+
+  {
+    "title": "おやき",
+    "text": "長野の郷土料理、中はこし餡。",
+    "creator": "淵野アタリ",
+    "tags": [
+      "etc"
+    ],
+    "image": "./works/udon7/udon7.jpg"
+  },
+
+  {
+    "title": "豚汁うどん",
+    "text": "おっきりこみ(群馬の郷土料理)インスパイア、製麺機の替刃を太いものに変更した。",
+    "creator": "淵野アタリ",
+    "tags": [
+      "etc"
+    ],
+    "image": "./works/udon8/udon8.jpg"
+  },
+
+  {
+    "title": "広島式お好み焼き",
+    "text": "広島のお好み焼きは大阪のお好み焼きと構成が異なる。",
+    "creator": "淵野アタリ",
+    "tags": [
+      "etc"
+    ],
+    "image": "./works/udon9/udon9.jpg"
+  },
+
+  {
+    "title": "ホットケーキ",
+    "text": "混ぜすぎないのがコツ。",
+    "creator": "淵野アタリ",
+    "tags": [
+      "etc"
+    ],
+    "image": "./works/udon10/udon10.jpg"
+  },
+
+  {
+    "title": "どら焼き",
+    "text": "ホットケーキを小さく作りあんこを挟む。",
+    "creator": "淵野アタリ",
+    "tags": [
+      "etc"
+    ],
+    "image": "./works/udon11/udon11.jpg"
+  },
+
+  {
+    "title": "はし巻き",
+    "text": "",
+    "creator": "淵野アタリ",
+    "tags": [
+      "etc"
+    ],
+    "image": "./works/udon12/udon12.jpg"
+  },
+
+  {
+    "title": "肉うどん",
+    "text": "味付き肉はあずきバー作。",
+    "creator": "あずきバー、淵野アタリ",
+    "tags": [
+      "etc"
+    ],
+    "image": "./works/udon13/udon13.jpg"
+  },
+
+  {
+    "title": "肉まん",
+    "text": "生地に油を混ぜてから蒸す。",
+    "creator": "淵野アタリ",
+    "tags": [
+      "etc"
+    ],
+    "image": "./works/udon14/udon14.jpg"
+  },
+
+  {
+    "title": "ナン",
+    "text": "カレーと良く合う。",
+    "creator": "ごっち、あずきバー、淵野アタリ",
+    "tags": [
+      "etc"
+    ],
+    "image": "./works/udon15/udon15.jpg"
+  },
+
+  {
+    "title": "スティックパン",
+    "text": "友人宅のオーブンを借りた。",
+    "creator": "淵野アタリ",
+    "tags": [
+      "etc"
+    ],
+    "image": "./works/udon16/udon16.jpg"
+  },
+
+  {
+    "title": "餃子",
+    "text": "生地を丸くカットして具を包む、最後に小麦粉を溶いた水を流すと羽ができる。",
+    "creator": "淵野アタリ",
+    "tags": [
+      "etc"
+    ],
+    "image": "./works/udon17/udon17.jpg"
+  },
+
+  {
+    "title": "蒸しパン",
+    "text": "",
+    "creator": "淵野アタリ",
+    "tags": [
+      "etc"
+    ],
+    "image": "./works/udon18/udon18.jpg"
+  },
+
+  {
+    "title": "サーターアンダギー",
+    "text": "揚げ工程はあずきバーが担当。",
+    "creator": "あずきバー、淵野アタリ",
+    "tags": [
+      "etc"
+    ],
+    "image": "./works/udon19/udon19.jpg"
+  },
+
+  {
+    "title": "チャーシューメン",
+    "text": "豚肉を圧力鍋で茹でてチャーシューとカエシを作り、自家製麺と合わせた。",
+    "creator": "淵野アタリ",
+    "tags": [
+      "etc"
+    ],
+    "image": "./works/udon20/udon20.jpg"
   }
 
 ]
