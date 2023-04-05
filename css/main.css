@@ -185,6 +185,20 @@ main > h1:first-child {
 	max-width: 480px;
 }
 
+.activity-list {
+	list-style-type: none;
+	padding-inline-start: 1em;
+}
+
+.activity-list li {
+	margin-block-end: 0.4em;
+}
+
+.activity-list .material-symbols-outlined {
+	vertical-align: text-bottom;
+	margin-inline-end: 0.2em;
+}
+
 .shinkan-poster img {
 	/* width: 100%; */
 	border: solid 1px black;
