@@ -42,7 +42,7 @@ img {
 	outline: none;
 }
 
-@media (min-width: 769px) {
+@media (768px < width) {
 	.container {
 		display: flex;
 		max-width: calc(12rem + 770px);
@@ -69,7 +69,7 @@ img {
 	}
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
 	.global-nav ul {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
