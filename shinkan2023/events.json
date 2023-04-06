@@ -8,7 +8,7 @@
   {
     "name": "個別説明会",
     "date": "4/07(金) 10:30~18:00",
-    "location": "A401",
+    "location": "A403",
     "other": ""
   },
   {
@@ -52,5 +52,11 @@
     "date": "4/13(木) 16:20~18:30",
     "location": "A403",
     "other": ""
+  },
+  {
+    "name": "定例部会",
+    "date": "4/14(金) 18:00~19:00",
+    "location": "A403",
+    "other": "<a href=\"https://uec-tokyo.zoom.us/j/83055642164?pwd=Y3JUYkR4dzQ0QVQ5QmpQMk1CQzZwUT09\" target=\"blank\">Zoom</a>"
   }
 ]
