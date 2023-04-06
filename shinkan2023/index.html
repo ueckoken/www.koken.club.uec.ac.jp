@@ -245,12 +245,18 @@
             部員が制作した作品の一部を紹介します
           </p>
           <div class="checkbox py-2">
-            <input type="checkbox" id="soft" value="soft" v-model="checkedTags">
-            <label for="soft"><span class="badge bg-secondary">software</span></label>
-            <input type="checkbox" id="hard" value="hard" v-model="checkedTags">
-            <label for="hard"><span class="badge bg-primary">hardware</span></label>
-            <input type="checkbox" id="etc" value="etc" v-model="checkedTags">
-            <label for="etc"><span class="badge bg-success">extra</span></label>
+            <label>
+              <input type="checkbox" name="soft" value="soft" v-model="checkedTags">
+              <span class="badge bg-secondary">software</span>
+            </label>
+            <label>
+              <input type="checkbox" name="hard" value="hard" v-model="checkedTags">
+              <span class="badge bg-primary">hardware</span>
+            </label>
+            <label>
+              <input type="checkbox" name="etc" value="etc" v-model="checkedTags">
+              <span class="badge bg-success">extra</span>
+            </label>
           </div>
           <div id="works">
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-2">
