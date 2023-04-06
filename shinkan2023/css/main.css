@@ -102,13 +102,15 @@
 
 /* Tagフィルタチェックボックス */
 .checkbox {
-  padding: 4px;
-  text-align: right;
+  display: flex;
+  justify-content: end;
+}
+.checkbox label {
+  margin-right: 0.25em;
 }
 .checkbox input {
-  /* チェックボックス位置揃え */
-  position: relative;
-  top: 2px;
+  margin-right: 0.25em;
+  vertical-align: middle;
 }
 
 .bg-img {
