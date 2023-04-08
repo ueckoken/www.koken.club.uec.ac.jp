@@ -44,17 +44,15 @@ h2 {
 address {
 	font-style: normal;
 }
-/* 詳細度を上げたくないので:whereを使う */
-:where(a:hover) {
+a {
 	text-decoration: none;
 }
+/* 詳細度を上げたくないので:whereを使う */
 :where(a:visited) {
 	color: var(--visited-color);
-	text-decoration: none;
 }
 :where(a:link) {
 	color: var(--link-color);
-	text-decoration: none;
 }
 img {
 	max-width: 100%;
