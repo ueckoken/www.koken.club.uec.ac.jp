@@ -63,7 +63,7 @@
 
 <header class="global-header">
 	<a href="./" class="logo">
-		<img src="img/kokenLogo.png" alt="こうけん" width="80" height="80">
+		<img src="img/kokenLogo.svg" alt="こうけん" width="815" height="815">
 		<p class="name">
 			<span class="name-uec">電気通信大学</span><br>
 			<span class="name-koken">工学研究部</span>
@@ -82,7 +82,10 @@
 		</li>
 		<li>
 			<a href="https://github.com/ueckoken">
-				<img src="img/github-icon.png" alt="ueckoken" width="32" height="32">
+				<picture>
+					<source media="(prefers-color-scheme: dark)" srcset="img/github-mark-white.svg">
+					<img src="img/github-mark.svg" alt="工学研究部GitHub organization" width="98" height="96">
+				</picture>
 			</a>
 		</li>
 	</ul>
@@ -154,14 +157,21 @@
 			<li><span class="material-symbols-outlined">restaurant</span>料理</li>
 			<li><span class="material-symbols-outlined">construction</span>その他 工学なんでも</li>
 		</ul>
-		<aside class="twitter">
-			<a class="twitter-timeline" href="https://twitter.com/ueckoken?ref_src=twsrc%5Etfw" data-height="500" data-dnt="true">
-				@ueckoken からのツイート
-			</a>
-		</aside>
+		<aside class="twitter"></aside>
 	</main>
 </div>
-<script src="https://platform.twitter.com/widgets.js" async></script>
 <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" defer></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script>
+	const twitterTimelineWidgetContainer = document.querySelector(".twitter")
+	const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+	twttr.widgets.createTimeline({
+		sourceType: "profile",
+		screenName: "ueckoken"
+	}, twitterTimelineWidgetContainer, {
+		height: 500,
+		theme: isDarkMode ? "dark" : undefined
+	})
+</script>
 </body>
 </html>
