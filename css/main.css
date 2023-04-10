@@ -61,59 +61,27 @@ img {
 	outline: none;
 }
 
-@media (768px < width) {
-	.container {
-		display: flex;
-		max-width: calc(12rem + 770px);
-		margin: 2rem auto 0;
-		box-sizing: border-box;
-	}
-
-	.global-nav {
-		width: 12rem;
-	}
-
-	.global-nav ul {
-		margin-top: 0;
-	}
-
-	.global-nav a {
-		padding: 0.75rem 1rem;
-	}
-
-	main {
-		box-sizing: border-box;
-		flex: 1;
-		margin-left: 1rem;
-	}
-}
-
-@media (width <= 768px) {
-	.global-nav ul {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-		margin-top: 0;
-	}
-	.global-nav a {
-		padding: 1em;
-	}
-	main {
-		margin-right: 0.5rem;
-		margin-left: 0.5rem;
-	}
+.container {
+	width: 100%;
+	max-width: 1024px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	box-sizing: border-box;
 }
 
 .global-header {
 	display: flex;
-	max-width: calc(12rem + 770px);
-	margin-right: auto;
-	margin-left: auto;
-	padding: 1em;
+	flex-wrap: wrap;
+	padding-top: 1em;
 	box-sizing: border-box;
 	justify-content: space-between;
 }
 .global-header .logo {
 	line-height: 1;
+	display: flex;
+	white-space: nowrap;
 }
 .global-header .logo img {
 	width: 48px;
@@ -121,7 +89,6 @@ img {
 	margin-right: 8px;
 }
 .global-header .name {
-	display: inline-block;
 	margin-top: 0;
 	margin-bottom: 0;
 	color: var(--text-color);
@@ -139,30 +106,47 @@ img {
 .global-header-social-links {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	margin-top: 0;
 	margin-bottom: 0;
 	padding-left: 0;
 	list-style-type: none;
 }
+
 .global-header-social-links a {
 	display: block;
-	padding: 0.25rem;
+	height: 100%;
+	padding-right: 0.25em;
+	padding-left: 0.25em;
 }
 .global-header-social-links img {
-	width: 2rem;
+	width: 2.5rem;
+	height: 2.5rem;
+	vertical-align: middle;
+}
+
+.global-nav {
+	flex-basis: 100%;
+	max-width: 100%;
+	margin-top: 1rem;
 }
 
 .global-nav ul {
+	display: flex;
 	list-style: none;
+	margin-top: 0;
 	margin-bottom: 0;
 	padding: 0;
+	overflow-x: auto;
+	white-space: nowrap;
 	line-height: 1;
 }
 
 .global-nav a {
 	display: block;
+	padding: 0.75rem 1rem 0.75rem;
+	border-radius: 0.5rem;
 	color: var(--text-color);
-	line-height: 1.1;
 	transition: background-color 0.2s ease-out;
 }
 
@@ -176,6 +160,10 @@ img {
 
 .global-nav .en-title {
 	font-size: 11px;
+}
+
+.main-container {
+	margin-top: 1.5rem;
 }
 
 main > h1:first-child {
