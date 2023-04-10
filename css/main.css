@@ -251,3 +251,8 @@ main > h1:first-child {
 	background-color: rgba(0, 0, 0, 0.6);
 	color: white;
 }
+.youtube-embed {
+	max-width: 100%;
+	height: auto;
+	aspect-ratio: 16 / 9;
+}
