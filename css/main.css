@@ -182,20 +182,6 @@ main > h1:first-child {
 	margin-top: 0;
 }
 
-/* .carousel {
-	overflow-x: hidden;
-	scroll-behavior: smooth;
-}
-.carousel-inner {
-	display: flex;
-	margin: 0;
-	overflow-x: auto;
-	scroll-snap-type: x mandatory;
-}
-.carousel img {
-	scroll-snap-align: start;
-} */
-
 .navigation li {
 	margin-bottom: 1em;
 }
