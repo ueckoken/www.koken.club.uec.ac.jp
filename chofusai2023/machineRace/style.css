@@ -1,0 +1,19 @@
+body {
+    writing-mode: vertical-rl;
+    font-family: "Yuji Syuku", serif;
+    color: #343434;
+    background: #fdeff2;
+}
+
+h1 {
+    counter-reset: section;
+}
+
+h2:before {
+    counter-increment: section;
+    content: counter(section, cjk-ideographic) "　";
+}
+
+p {
+    text-indent: 1em;
+}
