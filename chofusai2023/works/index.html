@@ -37,35 +37,80 @@
         <p>
             部員が調布祭に向けて制作した作品一覧を掲載しています。
         </p>
-        <h3 style="text-align: center;">近日追加予定です！！</h3>
 
+        <h4>ソフトウェア</h4>
         <div class="flexbox">
-            <!--
-            <section class="box" style="grid-area: a;">
-                <h4 class="title">作品名</h4>
-                <p class="name">Created by <strong>名前</strong></p>
-                <img src="../fig/koken_icon_large.png"><br>
-                <p>これをこれしてああして作りました。</p>
+            <section class="box">
+                <h4 class="title">工研統合認証</h4>
+                <p class="name">Created by <strong>ぼいど</strong></p>
+                <img src="./fig/soft/system.png"><br>
+                <p>工研で利用するサービスを統合的に管理する認証システムを開発し、入部手続きを自動化しました。</p>
             </section>
-            <section class="box" style="grid-area: b;">
-                <h4 class="title">作品名</h4>
-                <p class="name">Created by <strong>名前</strong></p>
-                <img src="../fig/koken_icon_large.png"><br>
-                <p>これをこれしてああして作りました。</p>
+            <section class="box">
+                <h4 class="title">jsを用いたzip、pngファイルの生成と圧縮、展開</h4>
+                <p class="name">Created by <strong>McbeEringi</strong></p>
+                <img src="./fig/soft/js_zip.png"><br>
+                <p>任意のデータから無圧縮のzip、pngファイルを高速に生成します 比較的新しい環境であれば圧縮、展開も可能です</p>
             </section>
-            <section class="box" style="grid-area: b;">
-                <h4 class="title">作品名</h4>
-                <p class="name">Created by <strong>名前</strong></p>
-                <img src="../fig/koken_icon_large.png"><br>
-                <p>これをこれしてああして作りました。</p>
+            <section class="box">
+                <h4 class="title">ユーコン</h4>
+                <p class="name">Created by <strong>ミコシバ</strong></p>
+                <img src="./fig/soft/yukon.png"><br>
+                <p>
+                    Siv3Dというフレームワークを使い、サンプルコードを改造して作ったトランプゲームです。
+                    クロンダイクに似ていて、組み札にスートごと、AからKまで整理することができれば勝ちです。
+                    また、表になっているカードは整列していなくてもまとめて動かすことができます。
+                    追加したい機能はいろいろあったのですが間に合いませんでした。
+                </p>
             </section>
-            <section class="box" style="grid-area: b;">
-                <h4 class="title">作品名</h4>
-                <p class="name">Created by <strong>名前</strong></p>
-                <img src="../fig/koken_icon_large.png"><br>
-                <p>これをこれしてああして作りました。</p>
+            <section class="box">
+                <h4 class="title">リバーブプラグイン</h4>
+                <p class="name">Created by <strong>へるくん</strong></p>
+                <img src="./fig/soft/reverb.png"><br>
+                <p>近年加速している円安に抗うべく、JUCEフレームワークを用いて作成したVST3プラグインです。</p>
             </section>
-            -->
+        </div>
+        <br>
+        <h4>ハードウェア</h4>
+        <div class="flexbox">
+            <section class="box">
+                <h4 class="title">ATtiny85開発ボード</h4>
+                <p class="name">Created by <strong>McbeEringi</strong></p>
+                <img src="./fig/hard/ATtiny85.jpg"><br>
+                <p>定番AVRマイコンATtiny85の開発基板です 一度ブートローダを書き込めばライター無しで開発できます。smd版はmicroUSBのケーブルに差し込んで使用します。</p>
+            </section>
+            <section class="box">
+                <h4 class="title">ATtiny202開発ボード</h4>
+                <p class="name">Created by <strong>McbeEringi</strong></p>
+                <img src="./fig/hard/ATtiny202.jpg"><br>
+                <p>
+                    比較的新しいAVRであるATtiny202の開発基板です タクトスイッチ、LED、キャパシタ1.5F、スピーカ、serialupdi書込機が一枚の基板に載っており、すぐに開発を開始できます キャパシタにより電源のない場所でも数分程度のスピーカ駆動が可能です
+                </p>
+            </section>
+            <section class="box">
+                <h4 class="title">4自由度四足歩行ロボット</h4>
+                <p class="name">Created by <strong>McbeEringi</strong></p>
+                <img src="./fig/hard/lobot.jpg"><br>
+                <p>
+                    ESP32C3を用いた四足歩行ロボットです WebSocketを用いた無線操縦を実装をしており、スマホでもブラウザから操縦可能です
+                </p>
+            </section>
+            <section class="box">
+                <h4 class="title">電極式調理器</h4>
+                <p class="name">Created by <strong>らぼねこ</strong></p>
+                <img src="./fig/hard/cooking_item.jpg"><br>
+                <p>
+                    AC100Vに接続して食品に直接交流電流を流しジュール熱で調理する装置です。ホットケーキ4枚分の生地を15分程度でカステラのように焼き上げることができます。電圧計、電流計は出来上がりの目安になります。また、ブレーカーを装備しており、スイッチの代わりとしての役割と短絡などの際に電流を遮断する役割をもたせています。生地を入れる箱に設置する電極板にはチタンを採用し、食品に金属が溶け出さないよう配慮しています。
+                </p>
+            </section>
+            <section class="box">
+                <h4 class="title">CPUクーラー改造ハンディファン</h4>
+                <p class="name">Created by <strong>ゆい</strong></p>
+                <img src="./fig/hard/fan.jpg"><br>
+                <p>
+                    みんなつかってないリテールクーラーを再利用したかった
+                </p>
+            </section>
         </div>
     </main>
     
