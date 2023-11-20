@@ -121,7 +121,7 @@ a:hover {
     display: block;
     font-size: 15px;
     padding: 0.5em 1em;
-    margin: 1em;
+    margin: 1em auto;
     width: 300px;
     color: #2c2c2f;
     background: #d7d7d7;/*背景色*/
@@ -139,8 +139,8 @@ a:hover {
     padding: 0;
 }
 .box img {
-    margin:0 5em;
-    width:50%;
+    margin:0 2em;
+    width:80%;
 }
 
 footer {
