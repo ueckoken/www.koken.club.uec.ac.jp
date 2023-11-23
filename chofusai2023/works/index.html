@@ -15,17 +15,48 @@
 	<meta property="twitter:url" content="https://www.koken.club.uec.ac.jp/chofusai2023/works/">
 	<link rel="apple-touch-icon" href="../fig/koken_icon_large.png">
 
-	<link rel="stylesheet" href="../style.css">
 	<script src="../style.js"></script>
 </head>
 <body>
+<style>
+		.flexbox {
+	display: flex; 
+	align-items: stretch;
+	flex-wrap: wrap;
+}
+.box {
+	display: block;
+	font-size: 15px;
+	padding: 0.5em 1em;
+	margin: 1em auto;
+	width: 300px;
+	color: var(--bg);
+	background-color: var(--fg);/*背景色*/
+	border-radius: 10px;
+	box-shadow: var(--box-shadow);
+}
+.box .title {
+	text-align: center;
+}
+.box .name {
+	text-align: right;
+}
+.box p {
+	margin: 0; 
+	padding: 0;
+}
+.box img {
+	margin:0 2em;
+	width:80%;
+}
+</style>
 <main>
-	<h2 style="text-align: center;">Works<hr></h2>
+	<h1 style="text-align: center;">Works</h1>
 	<p>
 		部員が調布祭に向けて制作した作品一覧を掲載しています。
 	</p>
-
-	<h4>ソフトウェア</h4>
+	<hr>
+	<h2>ソフトウェア</h2>
 	<div class="flexbox">
 		<section class="box">
 			<h4 class="title">工研統合認証</h4>
@@ -57,8 +88,8 @@
 			<p>近年加速している円安に抗うべく、JUCEフレームワークを用いて作成したVST3プラグインです。</p>
 		</section>
 	</div>
-	<br>
-	<h4>ハードウェア</h4>
+	<hr>
+	<h2>ハードウェア</h2>
 	<div class="flexbox">
 		<section class="box">
 			<h4 class="title">ATtiny85開発ボード</h4>
