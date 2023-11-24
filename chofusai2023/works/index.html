@@ -157,6 +157,6 @@
 		</section>
 	</div>
 </main>
-<script>document.querySelectorAll('section>img').forEach(x=>x.onclick=_=>(x.requestFullscreen||x.webkitRequestFullscreen).bind(x)())</script>
+<script>document.querySelectorAll('section>img').forEach(x=>x.onclick=_=>(x.requestFullscreen||x.webkitRequestFullscreen).call(x))</script>
 </body>
 </html>
