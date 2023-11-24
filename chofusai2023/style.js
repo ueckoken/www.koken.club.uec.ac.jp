@@ -10,7 +10,7 @@
 	main{max-width:800px;margin:auto;}
 
 	header{position:sticky;top:8px;display:flex;justify-content:space-between;pointer-events:none;z-index:10;}
-	header>a,header>nav>a,main img,iframe,hr,footer{background:var(--gray);backdrop-filter:blur(4px);border-radius:12px;box-sizing:border-box;padding:8px;}
+	header>a,header>nav>a,main img,iframe,hr,footer{background:var(--gray);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);border-radius:12px;box-sizing:border-box;padding:8px;}
 	hr{appearancenone;-webkit-appearance:none;border:none;padding:3px;}
 	header a{text-decoration:none;color:var(--fg) !important;}
 	header>*{display:flex;align-items:center;pointer-events:auto;}
