@@ -78,30 +78,10 @@ img {
 	box-sizing: border-box;
 	justify-content: space-between;
 }
-.global-header .logo {
-	line-height: 1;
-	display: flex;
-	white-space: nowrap;
-}
 .global-header .logo img {
-	width: 48px;
+	width: auto;
+	height: 48px;
 	vertical-align: middle;
-	margin-right: 8px;
-}
-.global-header .name {
-	margin-top: 0;
-	margin-bottom: 0;
-	color: var(--text-color);
-	font-weight: bold;
-	line-height: 1.2;
-	vertical-align: middle;
-	letter-spacing: -0.03em;
-}
-.global-header .name-uec {
-	font-size: 1rem;
-}
-.global-header .name-koken {
-	font-size: 1.5rem;
 }
 .global-header-social-links {
 	display: flex;
