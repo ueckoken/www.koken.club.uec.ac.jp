@@ -170,8 +170,12 @@ main > h1:first-child {
 	margin-top: 0;
 }
 
-.navigation li {
-	margin-bottom: 1em;
+.global-footer {
+	margin-block-start: 3rem;
+}
+
+.copyright {
+	text-align: center;
 }
 
 .twitter {
