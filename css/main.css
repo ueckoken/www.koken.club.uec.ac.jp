@@ -179,17 +179,24 @@ main > h1:first-child {
 }
 
 .activity-list {
+	display: grid;
+	grid-auto-rows: 6rem;
+	grid-template-columns: repeat(auto-fill, 10rem);
+	gap: 0.5rem normal;
+	align-content: space-around;
+	justify-content: space-around;
+	align-items: center;
+	justify-items: center;
 	list-style-type: none;
-	padding-inline-start: 1em;
-}
-
-.activity-list li {
-	margin-block-end: 0.4em;
+	padding-inline-start: 0;
+	text-align: center;
+	text-wrap: balance;
 }
 
 .activity-list .material-symbols-outlined {
-	vertical-align: text-bottom;
-	margin-inline-end: 0.2em;
+	display: block;
+	margin-block-end: 0.5rem;
+	font-size: 3rem;
 }
 
 .shinkan-poster img {
