@@ -14,6 +14,18 @@
 
 <body>
 
+<style>
+	main>figure{display:inline-block;position:relative;}
+	main>figure>img{object-fit:fill;aspect-ratio:1;border-radius:8px;}
+	main>figure>figcaption{
+		position:absolute;bottom:0;
+		box-sizing:border-box;padding:0 8px;
+		background-color:#222c;
+		transition:.2s;
+	}
+	main>figure:not(:hover)>figcaption{opacity:0;visibility:hidden;}
+</style>
+
 <header class="container global-header">
 	<a href="./" class="logo">
 		<img src="img/koken-logo-with-title.svg" alt="電気通信大学 工学研究部" width="3105" height="815">
@@ -86,53 +98,68 @@
 <div class="container main-container">
 	<main>
 		<h1>部室</h1>
-		サークル棟2階にある部室は電子部品が棚を埋め尽くし、複数台のサーバーが常に稼働し、加工機や3Dプリンターが設置されており、工学研究部員の活動拠点となっています。
+		<p>サークル棟2階にある部室は電子部品が棚を埋め尽くし、複数台のサーバーが常に稼働し、加工機や3Dプリンターが設置されており、工学研究部員の活動拠点となっています。</p>
 		<figure>
 			<img src="./img/electronic.jpg" width="1440" height="1080">
-			<figcaption>電子部品</figcaption>
-			<figcaption>トレイで分別された電子部品が棚一面を占領している。トランジスタ、ダイオード、抵抗、コイル、コンデンサなどさまざまな電子部品が揃う</figcaption>
+			<figcaption>
+				<h2>電子部品</h2>
+				<p>トレイで分別された電子部品が棚一面を占領している。<br>トランジスタ、ダイオード、抵抗、コイル、コンデンサなどさまざまな電子部品が揃う。</p>
+			</figcaption>
 		</figure>
 		<figure>
 			<img src="./img/machine.jpg" width="1080" height="1080">
-			<figcaption>工作機械</figcaption>
-			<figcaption>卓上ボール盤、卓上フライス盤が机の上に置かれている。床にはバンドソー、コンプレッサーがある。机の隣にはレンチやニッパーなどのツールを収める赤いワゴンが設置されている。</figcaption>
+			<figcaption>
+				<h2>工作機械</h2>
+				<p>卓上ボール盤、卓上フライス盤が机の上に置かれている。<br>床にはバンドソー、コンプレッサーがある。<br>机の隣にはレンチやニッパーなどのツールを収める赤いワゴンが設置されている。</p>
+			</figcaption>
 		</figure>
 		<figure>
 			<img src="./img/p1s.jpeg" width="1080" height="1350">
-			<figcaption>Bamboolab P1S</figcaption>
-			<figcaption>高速で印刷が可能な最新機種の3Dプリンターです</figcaption>
-			<figcaption></figcaption>
+			<figcaption>
+				<h2>Bamboo Lab P1S</h2>
+				<p>高速で印刷が可能な最新の積層型3Dプリンタ。</p>	
+			</figcaption>
 		</figure>
 		<figure>
 			<img src="./img/ender3.jpeg" width="1080" height="1350">
-			<figcaption>Ender3 Pro</figcaption>
-			<figcaption>多彩な印刷ができる積層型3Dプリンターです</figcaption>
-			<figcaption></figcaption>
+			<figcaption>
+				<h2>Ender3 Pro</h2>
+				<p>多彩な印刷ができる積層型3Dプリンタ。</p>	
+			</figcaption>
 		</figure>
 		<figure>
 			<img src="./img/anycubic4k.jpeg" width="1080" height="1350">
-			<figcaption>PHOTON MONO 4K</figcaption>
-			<figcaption>細かな印刷ができる光造形型の3Dプリンターです。</figcaption>
-			<figcaption></figcaption>
+			<figcaption>
+				<h2>PHOTON MONO 4K</h2>
+				<p>細かな印刷ができる光造形型3Dプリンタ。</p>
+			</figcaption>
 		</figure>
 		<figure>
 			<img src="./img/server.jpeg" width="1080" height="1350">
-			<figcaption>サーバー</figcaption>
-			<figcaption>合計で3台のサーバーが設置されている。また、ストレージサーバーとしてQNAPのNASを備えている。</figcaption>
+			<figcaption>
+				<h2>サーバー</h2>
+				<p>合計で3台のサーバーが設置されている。<br>また、ストレージサーバーとしてQNAPのNASを備えている。</p>	
+			</figcaption>
 		</figure>
 		<figure>
 			<img src="./img/network.jpeg" width="1440" height="1080">
-			<figcaption>ネットワーク機器</figcaption>
-			<figcaption>ラックマウントされた各種ネットワーク機器には、10G対応のL2スイッチ、PoE対応のL2スイッチ、Vyosを用いたソフトウェアルータで構成されている。サークル棟・部室内は10GbEの通信に対応している。</figcaption>
+			<figcaption>
+				<h2>ネットワーク機器</h2>
+				<p>ラックマウントされた10G対応のL2スイッチ、PoE対応のL2スイッチ、Vyosを用いたソフトウェアルータで構成されている。<br>サークル棟・部室内は10GbEの通信に対応している。</p>	
+			</figcaption>
 		</figure>
 		<figure>
 			<img src="./img/vive-and-more.jpg" alt="ブレッドボードとはんだごて、テスター、オシロスコープ、ニッパー、ノギスが陳列されている。背後にHTC Viveがある。" width="1440" height="1080">
-			<figcaption>VR機器と電子工作器具</figcaption>
-			<figcaption>ブレッドボードとはんだごて、テスター、オシロスコープ、ニッパー、ノギスが陳列されている。背後にHTC Viveがある。</figcaption>
+			<figcaption>
+				<h2>VR機器と電子工作器具</h2>
+				<p>ブレッドボードとはんだごて、テスター、オシロスコープ、ニッパー、ノギスが陳列されている。背後にHTC Viveがある。</p>	
+			</figcaption>
 		</figure>
 		<figure class="shinkan-poster">
-			<figcaption>2019年新入生歓迎ビラ</figcaption>
 			<img src="./img/shinkan-poster-2019.png">
+			<figcaption>
+				<h2>2019年新入生歓迎ビラ</h2>
+			</figcaption>
 		</figure>
 	</main>
 </div>
