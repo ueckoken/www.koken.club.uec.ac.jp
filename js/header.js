@@ -3,7 +3,7 @@
 	self.root=d.querySelector('script[src$="js/header.js"]').outerHTML.match(/"(.*)js\/header\.js"/)[1]||'./',
 	(w=>d.readyState=='loading'?addEventListener('DOMContentLoaded',w,{once:true}):w())(_=>d.body.insertAdjacentHTML('afterbegin',`
 <header class="container global-header">
-	<a href="./" class="logo">
+	<a href="${root}" class="logo">
 		<img src="${root}img/koken-logo-with-title.svg" alt="電気通信大学 工学研究部" width="3105" height="815">
 	</a>
 	<ul class="global-header-social-links">
