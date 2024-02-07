@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="電気通信大学 工学研究部は部員各自が作りたいものを作るサークルです。電子工作からプログラムまで幅広く活動しています。また、Maker Faire Tokyoや技術書典などのイベントに参加し、制作物を展示することもあります。">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="css/main.css">
+<link rel="icon" href="img/kokenLogo.ico">
+
+<title>工学研究部について - UEC Koken</title>
+
+</head>
+
+<body>
+
+<style>
+	main>figure{display:inline-block;position:relative;}
+	main>figure>img{object-fit:fill;aspect-ratio:1;border-radius:8px;}
+	main>figure>figcaption{
+		position:absolute;bottom:0;
+		box-sizing:border-box;padding:0 8px;
+		background-color:#222c;
+		transition:.2s;
+	}
+	main>figure:not(:hover)>figcaption{opacity:0;visibility:hidden;}
+</style>
+
+<header class="container global-header">
+	<a href="./" class="logo">
+		<img src="img/koken-logo-with-title.svg" alt="電気通信大学 工学研究部" width="3105" height="815">
+	</a>
+	<ul class="global-header-social-links">
+		<li>
+			<a href="https://twitter.com/ueckoken">
+				<picture>
+					<source media="(prefers-color-scheme: dark)" srcset="img/x-logo-white.png" width="2400" height="2453">
+					<img src="img/x-logo-black.png" alt="@ueckoken" width="2400" height="2453">
+				</picture>
+			</a>
+		</li>
+		<li>
+			<a href="https://www.youtube.com/@kokenuser">
+				<img src="img/youtube_social_circle_red.png" alt="工学研究部YouTubeチャンネル" width="128" height="128">
+			</a>
+		</li>
+		<li>
+			<a href="https://github.com/ueckoken">
+				<picture>
+					<source media="(prefers-color-scheme: dark)" srcset="img/github-mark-white.svg" sizes="98">
+					<img src="img/github-mark.svg" alt="工学研究部GitHub organization" width="98" height="96">
+				</picture>
+			</a>
+		</li>
+	</ul>
+	<nav class="global-nav" aria-label="ナビゲーション">
+		<ul>
+			<li>
+				<a href="about.html">
+					<span class="title">工学研究部について</span>
+					<span class="en-title">About</span>
+				</a>
+			</li>
+			<li>
+				<a href="works.html">
+					<span class="title">活動</span>
+					<span class="en-title">Works</span>
+				</a>
+			</li>
+			<li>
+				<a href="clubroom.html">
+					<span class="title">部室</span>
+					<span class="en-title">Clubroom</span>
+				</a>
+			</li>
+			<li>
+				<a href="docs.html">
+					<span class="title">資料集</span>
+					<span class="en-title">Documents</span>
+				</a>
+			</li>
+			<li>
+				<a href="rules.html">
+					<span class="title">規約・規則</span>
+					<span class="en-title">Rules</span>
+				</a>
+			</li>
+			<li>
+				<a href="https://wiki.koken.club.uec.ac.jp/">
+					<span class="title">工研Wiki</span>
+					<span class="en-title">KokenWiki</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+</header>
+
+<div class="container main-container">
+	<main>
+		<h1>部室</h1>
+		<p>サークル棟2階にある部室は電子部品が棚を埋め尽くし、複数台のサーバーが常に稼働し、加工機や3Dプリンターが設置されており、工学研究部員の活動拠点となっています。</p>
+		<figure>
+			<img src="./img/electronic.jpg" width="1440" height="1080">
+			<figcaption>
+				<h2>電子部品</h2>
+				<p>トレイで分別された電子部品が棚一面を占領している。<br>トランジスタ、ダイオード、抵抗、コイル、コンデンサなどさまざまな電子部品が揃う。</p>
+			</figcaption>
+		</figure>
+		<figure>
+			<img src="./img/machine.jpg" width="1080" height="1080">
+			<figcaption>
+				<h2>工作機械</h2>
+				<p>卓上ボール盤、卓上フライス盤が机の上に置かれている。<br>床にはバンドソー、コンプレッサーがある。<br>机の隣にはレンチやニッパーなどのツールを収める赤いワゴンが設置されている。</p>
+			</figcaption>
+		</figure>
+		<figure>
+			<img src="./img/p1s.jpeg" width="1080" height="1350">
+			<figcaption>
+				<h2>Bamboo Lab P1S</h2>
+				<p>高速で印刷が可能な最新の積層型3Dプリンタ。</p>	
+			</figcaption>
+		</figure>
+		<figure>
+			<img src="./img/ender3.jpeg" width="1080" height="1350">
+			<figcaption>
+				<h2>Ender3 Pro</h2>
+				<p>多彩な印刷ができる積層型3Dプリンタ。</p>	
+			</figcaption>
+		</figure>
+		<figure>
+			<img src="./img/anycubic4k.jpeg" width="1080" height="1350">
+			<figcaption>
+				<h2>PHOTON MONO 4K</h2>
+				<p>細かな印刷ができる光造形型3Dプリンタ。</p>
+			</figcaption>
+		</figure>
+		<figure>
+			<img src="./img/server.jpeg" width="1080" height="1350">
+			<figcaption>
+				<h2>サーバー</h2>
+				<p>合計で3台のサーバーが設置されている。<br>また、ストレージサーバーとしてQNAPのNASを備えている。</p>	
+			</figcaption>
+		</figure>
+		<figure>
+			<img src="./img/network.jpeg" width="1440" height="1080">
+			<figcaption>
+				<h2>ネットワーク機器</h2>
+				<p>ラックマウントされた10G対応のL2スイッチ、PoE対応のL2スイッチ、Vyosを用いたソフトウェアルータで構成されている。<br>サークル棟・部室内は10GbEの通信に対応している。</p>	
+			</figcaption>
+		</figure>
+		<figure>
+			<img src="./img/vive-and-more.jpg" alt="ブレッドボードとはんだごて、テスター、オシロスコープ、ニッパー、ノギスが陳列されている。背後にHTC Viveがある。" width="1440" height="1080">
+			<figcaption>
+				<h2>VR機器と電子工作器具</h2>
+				<p>ブレッドボードとはんだごて、テスター、オシロスコープ、ニッパー、ノギスが陳列されている。背後にHTC Viveがある。</p>	
+			</figcaption>
+		</figure>
+		<figure class="shinkan-poster">
+			<img src="./img/shinkan-poster-2019.png">
+			<figcaption>
+				<h2>2019年新入生歓迎ビラ</h2>
+			</figcaption>
+		</figure>
+	</main>
+</div>
+<footer class="container global-footer">
+	<p class="copyright"><small>© UEC Koken</small></p>
+</footer>
+</body>
+</html>
