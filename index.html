@@ -12,7 +12,12 @@
 
 <link rel="icon" href="img/kokenLogo.ico">
 <title>UEC Koken</title>
-<script src="js/header.js" async></script>
+
+<script type="module">
+	import { KokenGlobalHeader } from "./js/header.js"
+	customElements.define("koken-global-header", KokenGlobalHeader)
+</script>
+
 <!--
 　　　　　　　　 　 //,　　|//| ∨,
 　　　 　 　 　 　 //// 　|//|　 '/,
@@ -62,6 +67,7 @@
 
 <body>
 
+<koken-global-header></koken-global-header>
 <div class="container main-container">
 	<main>
 		<div class="swiffy-slider slider-nav-autoplay slider-item-ratio" data-slider-nav-autoplay-interval="5000">

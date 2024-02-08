@@ -15,10 +15,16 @@
     <link rel="icon" href="img/kokenLogo.ico">
 
     <title>工学研究部の規約・規則 - UEC Koken</title>
-    <script src="js/header.js" async></script>
+
+    <script type="module">
+      import { KokenGlobalHeader } from "./js/header.js"
+      customElements.define("koken-global-header", KokenGlobalHeader)
+    </script>
+
   </head>
 
   <body>
+    <koken-global-header></koken-global-header>
     <div class="container main-container">
       <main>
         <h1>工学研究部の規約・規則について</h1>
