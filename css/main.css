@@ -183,9 +183,13 @@ main > h1:first-child {
 	font-size: 3rem;
 }
 
+.shinkan-poster{
+	margin: 1rem 0;
+}
 .shinkan-poster img {
 	/* width: 100%; */
 	border: solid 1px black;
+	max-height: 640px;
 }
 
 .compact-dl dt {

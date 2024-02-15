@@ -10,73 +10,16 @@
 
 <title>活動 - UEC Koken</title>
 
+<script type="module">
+	import { KokenGlobalHeader } from "./js/header.js"
+	customElements.define("koken-global-header", KokenGlobalHeader)
+</script>
+
 </head>
 
 <body>
 
-<header class="container global-header">
-	<a href="./" class="logo">
-		<img src="img/koken-logo-with-title.svg" alt="電気通信大学 工学研究部" width="3105" height="815">
-	</a>
-	<ul class="global-header-social-links">
-		<li>
-			<a href="https://twitter.com/ueckoken">
-				<picture>
-					<source media="(prefers-color-scheme: dark)" srcset="img/x-logo-white.png" width="2400" height="2453">
-					<img src="img/x-logo-black.png" alt="@ueckoken" width="2400" height="2453">
-				</picture>
-			</a>
-		</li>
-		<li>
-			<a href="https://www.youtube.com/@kokenuser">
-				<img src="img/youtube_social_circle_red.png" alt="工学研究部YouTubeチャンネル" width="128" height="128">
-			</a>
-		</li>
-		<li>
-			<a href="https://github.com/ueckoken">
-				<picture>
-					<source media="(prefers-color-scheme: dark)" srcset="img/github-mark-white.svg" sizes="98">
-					<img src="img/github-mark.svg" alt="工学研究部GitHub organization" width="98" height="96">
-				</picture>
-			</a>
-		</li>
-	</ul>
-	<nav class="global-nav" aria-label="ナビゲーション">
-		<ul>
-			<li>
-				<a href="about.html">
-					<span class="title">工学研究部について</span>
-					<span class="en-title">About</span>
-				</a>
-			</li>
-			<li>
-				<a href="works.html">
-					<span class="title">活動</span>
-					<span class="en-title">Works</span>
-				</a>
-			</li>
-			<li>
-				<a href="docs.html">
-					<span class="title">資料集</span>
-					<span class="en-title">Documents</span>
-				</a>
-			</li>
-			<li>
-				<a href="rules.html">
-					<span class="title">規約・規則</span>
-					<span class="en-title">Rules</span>
-				</a>
-			</li>
-			<li>
-				<a href="https://wiki.koken.club.uec.ac.jp/">
-					<span class="title">工研Wiki</span>
-					<span class="en-title">KokenWiki</span>
-				</a>
-			</li>
-		</ul>
-	</nav>
-</header>
-
+<koken-global-header></koken-global-header>
 <div class="container main-container">
 	<main>
 		<h1>活動</h1>
