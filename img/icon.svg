@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 64 64">
+	<style>
+		.s{stroke:#f00;fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2;}
+	</style>
+	<path class="s" d="
+		M4,4v26h26v-26z m4,22l18,-18m-22,-4
+		m30,0v26h26v-26z m4,18l4,4,14,-14,-4,-4zm-4,-18
+		m-30,30v26h26v-26z
+		m30,0v26h26v-26z m4,22l18,-18m-22,-4
+	"/>
+</svg>

@@ -1,3 +1,0 @@
-Discord テキスト読み上げBot
-https://github.com/Azuki-bar/ceviord
-by Auki-bar & gotti
