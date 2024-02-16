@@ -79,3 +79,36 @@ export class KokenGlobalHeader extends HTMLElement {
 		`
 	}
 }
+
+export class KokenBuhoItem extends HTMLElement{
+	constructor(){
+		super();
+		this.outerHTML=`<li>
+	<a href="https://buho.ueckoken.club/${this.dataset.index}.pdf">
+		<p class="caption">${this.dataset.title}</p>
+		<figure>
+			<img class="buhoutop" src="https://buho.ueckoken.club/${this.dataset.index}.png" alt="" width="595" height="842">
+		</figure>
+	</a>
+</li>
+`;
+	}
+}
+export class KokenBuhoList extends HTMLElement{
+	constructor(){
+		super();
+		const fmt=w=>(f=x=>({index:x,title:`第${x}号`}))=>w.split(',').flatMap(x=>(x=x.split('~'),[...Array(x[1]-x[0]+1)].flatMap((_,i)=>f(+x[0]+i))));
+		this.outerHTML='<ol class="buhou-list">'+
+			(
+				this.dataset.range?
+					Function('return '+this.dataset.range)():
+					[
+						...fmt('1~7,41~52,54~59')(),
+						...fmt('60~63')(x=>[{index:x+'hard',title:`第${x}号ハード編`},{index:x+'soft',title:`第${x}号ソフト編`}]),
+						...fmt('64~72')()
+					]
+			)
+			.map(({index,title})=>`<koken-buho-item data-index="${index}" data-title="${title}"></koken-buho-item>`)
+			.join('')+'</ol>';
+	}
+}
