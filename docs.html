@@ -11,131 +11,28 @@
 
 	<title>資料集 - UEC Koken</title>
 
-<script type="module">
-	import { KokenGlobalHeader } from "./js/header.js"
-	customElements.define("koken-global-header", KokenGlobalHeader)
-</script>
+	<script type="module">
+		import { KokenGlobalHeader, KokenBuhoItem, KokenBuhoList } from "./js/header.js"
+		customElements.define("koken-global-header", KokenGlobalHeader)
+		customElements.define("koken-buho-item", KokenBuhoItem)
+		customElements.define("koken-buho-list", KokenBuhoList)
+	</script>
 
 </head>
 
 <body>
-<koken-global-header></koken-global-header>
-<div class="container main-container">
-	<main>
-		<h1>過去の部報</h1>
-		<p>閲覧可能なもののみ掲載しています。</p>
-		<p>最新の部報は工学研究部が参加する各種イベントにてお求めください。イベントのアナウンスは<a href="https://twitter.com/ueckoken">Twitter</a>を通じて行っています。</p>
-			<ol class="buhou-list">
-				<li>
-					<a href="https://buho.ueckoken.club/41.pdf">
-						<p class="caption">第41号</p>
-						<figure>
-							<img class="buhoutop" src="https://buho.ueckoken.club/41top.png" alt="" width="595" height="842">
-						</figure>
-					</a>
-				</li>
-				<li>
-					<a href="https://buho.ueckoken.club/42.pdf">
-						<p class="caption">第42号</p>
-						<figure>
-							<img class="buhoutop" src="https://buho.ueckoken.club/42top.png" alt="" width="595" height="842">
-						</figure>
-					</a>
-				</li>
-				<li>
-					<a href="https://buho.ueckoken.club/43.pdf">
-						<p class="caption">第43号</p>
-						<figure>
-							<img class="buhoutop" src="https://buho.ueckoken.club/43top.png" alt="" width="595" height="842">
-						</figure>
-					</a>
-				</li>
-				<li>
-					<a href="https://buho.ueckoken.club/44.pdf">
-						<p class="caption">第44号</p>
-						<figure>
-							<img class="buhoutop" src="https://buho.ueckoken.club/44top.png" alt="" width="595" height="842">
-						</figure>
-					</a>
-				</li>
-				<li>
-					<a href="https://buho.ueckoken.club/45.pdf">
-						<p class="caption">第45号</p>
-						<figure>
-							<img class="buhoutop" src="https://buho.ueckoken.club/45top.png" alt="" width="595" height="842">
-						</figure>
-					</a>
-				</li>
-				<li>
-					<a href="https://buho.ueckoken.club/46.pdf">
-						<p class="caption">第46号</p>
-						<figure>
-							<img class="buhoutop" src="https://buho.ueckoken.club/46top.png" alt="" width="595" height="842">
-						</figure>
-					</a>
-				</li>
-				<li>
-					<a href="https://buho.ueckoken.club/47.pdf">
-						<p class="caption">第47号</p>
-						<figure>
-							<img class="buhoutop" src="https://buho.ueckoken.club/47top.png" alt="" width="595" height="842">
-						</figure>
-					</a>
-				</li>
-				<li>
-					<a href="https://buho.ueckoken.club/48.pdf">
-						<p class="caption">第48号</p>
-						<figure>
-							<img class="buhoutop" src="https://buho.ueckoken.club/48top.png" alt="" width="595" height="842">
-						</figure>
-					</a>
-				</li>
-				<li>
-					<a href="https://buho.ueckoken.club/49.pdf">
-						<p class="caption">第49号</p>
-						<figure>
-							<img class="buhoutop" src="https://buho.ueckoken.club/49top.png" alt="" width="595" height="842">
-						</figure>
-					</a>
-				</li>
-				<li>
-					<a href="https://buho.ueckoken.club/50.pdf">
-						<p class="caption">第50号</p>
-						<figure>
-							<img class="buhoutop" src="https://buho.ueckoken.club/50top.png" alt="" width="595" height="842">
-						</figure>
-					</a>
-				</li>
-				<li>
-					<a href="https://buho.ueckoken.club/51.pdf">
-						<p class="caption">第51号</p>
-						<figure>
-							<img class="buhoutop" src="https://buho.ueckoken.club/51top.png" alt="" width="595" height="842">
-						</figure>
-					</a>
-				</li>
-				<li>
-					<a href="https://buho.ueckoken.club/52.pdf">
-						<p class="caption">第52号</p>
-						<figure>
-							<img class="buhoutop" src="https://buho.ueckoken.club/52top.png" alt="" width="2480" height="3508">
-						</figure>
-					</a>
-				</li>
-				<li>
-					<a href="https://buho.ueckoken.club/54.pdf">
-						<p class="caption">第54号</p>
-						<figure>
-							<img class="buhoutop" src="https://buho.ueckoken.club/54top.png" alt="" width="595" height="842">
-						</figure>
-					</a>
-				</li>
-			</ol>
-	</main>
-</div>
-<footer class="container global-footer">
-	<p class="copyright"><small>© UEC Koken</small></p>
-</footer>
+	<koken-global-header></koken-global-header>
+	<div class="container main-container">
+		<main>
+			<h1>過去の部報</h1>
+			<p>閲覧可能なもののみ掲載しています。</p>
+			<p>最新の部報は工学研究部が参加する各種イベントにてお求めください。イベントのアナウンスは<a href="https://twitter.com/ueckoken">Twitter</a>を通じて行っています。</p>
+			<koken-buho-list></koken-buho-list>
+		</main>
+	</div>
+	<footer class="container global-footer">
+		<p class="copyright"><small>© UEC Koken</small></p>
+	</footer>
 </body>
 
 </html>
