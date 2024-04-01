@@ -8,10 +8,15 @@
 <body>
 	<style>
 		body{margin:8px auto;max-width:1024px;padding:16px;border-radius:16px;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);}
-		body>*{transition:.2s;}
-		input:checked~*{color:#f44;animation:party_col .5s infinite linear,party_mov .5s infinite linear;}
-		@keyframes party_col{0%{filter:hue-rotate(0);}100%{filter:hue-rotate(360deg);}}
-		@keyframes party_mov{0%{transform:skewX(30deg);}25%{transform:scaleY(1.5);}50%{transform:skewX(-30deg);}75%{transform:scaleY(.5);}100%{transform:skewX(30deg);}}
+		.party{transform-origin:bottom;}
+		input:checked~.party,input:checked~* .party{color:#f44;animation:party .6s infinite linear;}
+		@keyframes party{
+			0%{transform:skewX(-30deg);filter:hue-rotate(0);}
+			25%{transform:scaleY(1.3);}
+			50%{transform:skewX(30deg);}
+			75%{transform:scaleY(.7);}
+			100%{transform:skewX(-30deg);filter:hue-rotate(360deg);}
+		}
 
 		:root{--k:#223;--a:#6ca8;--w:#fff;--s:#8884;--bc:var(--w);--fc:var(--k);--bor:max(2px,.2em);background-color:var(--bc);}
 		@media(prefers-color-scheme:dark){:root{--bc:var(--k);--fc:var(--w);}:link{color:#8cf;}:visited{color:#c8f;}:link:active,:visited:active{color:#f8c;}}
@@ -40,7 +45,7 @@
 		input[type=checkbox]:checked.toggle::before{content:attr(I);transform:translateX(calc(var(--size)*-.4375))translate(-50%,-50%);}
 		input[type=checkbox]:checked.toggle::after{transform:translateX(calc(var(--size)*.75))scale(.75);}
 		input[type=checkbox]:disabled.toggle{filter:saturate(0)opacity(.5);}
-</style>
+	</style>
 	<input type="checkbox" class="toggle" I="I" O="O">
 	<h1>工学研究部</h1>
 	<hr>
@@ -131,6 +136,6 @@
 		<p style="--img:url(img/works/hanba-gu.jpg);--txt:'材料:合挽き肉、塩コショウ、ナツメグ、パン粉、牛乳、卵';">ハンバーグ @わらび</p>
 		<p style="--img:url(img/works/oyakodon.jpg);--txt:'材料:ごはん、だし醤油、砂糖、卵、玉ねぎ、鶏もも肉';">親子丼 @わらび</p>
 	</div>
-
+	<script>document.querySelectorAll('h1,h2,h3,p,iframe,li,th,td').forEach(x=>x.classList.add('party'))</script>
 </body>
 </html>
