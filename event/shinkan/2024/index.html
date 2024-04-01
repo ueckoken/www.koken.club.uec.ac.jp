@@ -7,23 +7,43 @@
 </head>
 <body>
 	<style>
-		:root{
-			--w:#fff;
-			--k:#000;
-			--bc:var(--w);--fc:var(--k);
-
-			background-color:var(--bc);color:var(--fc);
-			font-family:sans-serif;
-		}
-		:root::before{content:'';display:block;width:100%;height:100%;position:fixed;z-index:-1;background:0 0/32px url('img/kagome.svg');opacity:.2;}
-		@media(prefers-color-scheme:dark){
-			:root{--bc:var(--k);--fc:var(--w);}
-			:link{color:#8cf;}:visited{color:#c8f;}:link:active,:visited:active{color:#f8c;}
-		}
 		body{margin:8px auto;max-width:1024px;padding:16px;border-radius:16px;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);}
-		.img-thumbnail{width:512px;max-width:100%;}
-	</style>
+		body>*{transition:.2s;}
+		input:checked~*{color:#f44;animation:party_col .5s infinite linear,party_mov .5s infinite linear;}
+		@keyframes party_col{0%{filter:hue-rotate(0);}100%{filter:hue-rotate(360deg);}}
+		@keyframes party_mov{0%{transform:skewX(30deg);}25%{transform:scaleY(1.5);}50%{transform:skewX(-30deg);}75%{transform:scaleY(.5);}100%{transform:skewX(30deg);}}
+
+		:root{--k:#223;--a:#6ca8;--w:#fff;--s:#8884;--bc:var(--w);--fc:var(--k);--bor:max(2px,.2em);background-color:var(--bc);}
+		@media(prefers-color-scheme:dark){:root{--bc:var(--k);--fc:var(--w);}:link{color:#8cf;}:visited{color:#c8f;}:link:active,:visited:active{color:#f8c;}}
+		:root::before{content:"";position:fixed;width:100%;height:100%;z-index:-1;background:0 0/48px url(img/kagome.svg);opacity:.1;}
+		.zab,.stuff>*,:root{color:var(--fc);font-family:sans-serif;}
+		.zab,.stuff>*,hr{box-sizing:border-box;border-radius:calc(3*var(--bor));appearance:none;-webkit-appearance:none;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);}
+		.zab,.stuff>*{margin:var(--bor) 0;outline:0;padding:var(--bor);border:#0000 var(--bor) solid;background-color:var(--c);display:inline-block;max-width:100%;vertical-align:middle;--c:var(--s);resize:none;transition:.2s;}
+		.zab:hover,.zab:focus,.stuff>*:hover,.stuff>*:focus{border-color:var(--c);background-color:#0000;}
+		hr{border:var(--bor) solid var(--s);}.bgca{--c:var(--a);}::placeholder{color:var(--s);opacity:1;}.zab:disabled{opacity:.5;}
+
+		.stuff{--scale:1;display:flex;flex-wrap:wrap;}
+		.stuff>*{margin:var(--bor);flex:0;}
+		.stuff>*::before{content:"";display:block;--a:calc(calc(340px*var(--scale)) - calc(var(--bor)*6));width:var(--a);height:var(--a);border-radius:var(--bor);background:no-repeat center/cover var(--img,url(img/kokenLogo.svg));}
+		.stuff>*::after{content:var(--txt);display:inline-block;width:100%;font-size:small;text-decoration:none;color:var(--fc);white-space:pre-wrap;}
+		.irp{image-rendering:pixelated;}
+
+		.carousel{--width:50%;--margin:16px;display:flex;overflow:auto;scroll-snap-type:x mandatory;}
+		.carousel>*{flex:0 0 auto;object-fit:contain;scroll-snap-align:center;width:var(--width);margin:0 var(--margin);}
+		.carousel::before,.carousel::after{content:"";display:block;flex-shrink:0;width:calc(calc(50% - var(--margin)) - calc(var(--width)/2));}
+		@media(max-width:560px){.carousel{--width:100%;--margin:0;}}
+
+		input[type=checkbox].toggle{--size:2em;-webkit-appearance:none;appearance:none;display:inline-block;position:relative;width:calc(var(--size)*1.75);height:var(--size);border-radius:calc(3*var(--bor));vertical-align:middle;color:inherit;background-color:var(--s);transition:cubic-bezier(0,1,.5,1.5) .2s;}
+		input[type=checkbox].toggle::before{content:attr(O);transform:translateX(calc(var(--size)*.4375))translate(-50%,-50%);color:inherit;font-size:calc(var(--size)*.5);transition:inherit;position:absolute;top:50%;left:50%;}
+		input[type=checkbox].toggle::after{content:"";display:block;width:var(--size);height:var(--size);border-radius:calc(3*var(--bor));position:absolute;top:0;transform:scale(.75);background-color:#fff;transition:inherit;}
+		input[type=checkbox]:checked.toggle{background-color:var(--a);}
+		input[type=checkbox]:checked.toggle::before{content:attr(I);transform:translateX(calc(var(--size)*-.4375))translate(-50%,-50%);}
+		input[type=checkbox]:checked.toggle::after{transform:translateX(calc(var(--size)*.75))scale(.75);}
+		input[type=checkbox]:disabled.toggle{filter:saturate(0)opacity(.5);}
+</style>
+	<input type="checkbox" class="toggle" I="I" O="O">
 	<h1>工学研究部</h1>
+	<hr>
 	<h2>工学研究部とは？</h2>
 	<p>
 		工学研究部は部員がそれぞれモノづくりをする技術系の<b>大学公認</b>サークルです。ハードウェアからソフトウェアまで幅広く活動しています。
@@ -48,6 +68,7 @@
 	</ul>
 	<h3>活動紹介動画</h3>
 	<iframe src="https://www.youtube-nocookie.com/embed/OgtSbhXeUhg" frameborder="0"></iframe>
+	<hr>
 
 	<h2>新歓イベント情報</h2>
 	<p>工学研究部が実施または参加する新歓イベントの一覧です(随時更新)。</p>
@@ -61,40 +82,21 @@
 		<tr><th>学域1年生</th><td>5000円</td></tr>
 		<tr><th>その他</th><td>6000円</td></tr>
 	</table>
+	<hr>
 
 	<h2>活動内容(昨年度)</h2>
-	<h3>5月 新入生講習</h3>
-	<p>
-		新入生を対象にソフトウェアとハードウェアの基本的な内容を上級生が教えます。
-		ソフトウェア講習(Ruby・C言語)では基本制御構文から始まり、基礎的な内容の演習を行いました。
-		ハードウェア講習ではトランジスタやICなどの基礎的な電子素子の仕組みの紹介をし、実際に回路を作成する演習を実施しました。
-	</p>
-	<img src="img/koshu.png" class="img-thumbnail">
-	<h3>8, 9月 合宿</h3>
-	<p>
-		寝食を共にしながら互いに様々な分野の講習を行います。
-		2023年度は<a href="http://gakusei.office.uec.ac.jp/hukuri/hamami/hamamiryou.html" target="_blank">浜見寮</a>(神奈川県藤沢市)で花火や海水浴、江ノ島/鎌倉観光なども楽しみました。
-	</p>
-	<img src="img/hamami.png" class="img-thumbnail">
-	<h3>10月 工研コンテスト</h3>
-	<p>
-		ソフトウェア部門とハードウェア部門に分かれて作品アイデアを発表するコンテストです。
-		合わせて19のエントリーがあり、投票で優秀賞や新人賞などを受賞した人には景品が贈られました！
-	</p>
-	<img src="img/Contest.png" class="img-thumbnail">
-	<h3>11月 調布祭</h3>
-	<p>
-		学園祭で部員の作品を展示します。
-		去年に引き続き、プラレール企画を実施しました。
-	</p>
-	<img src="img/prarail.png" class="img-thumbnail">
-	<h3>4月 工研LT</h3>
-	<p>各自が持ち寄ったテーマでLightning Talkと呼ばれる短いプレゼンをしました。</p>
-	<img src="img/LT.png" class="img-thumbnail">
+	<div class="stuff">
+		<p style="--img:url(img/koshu.png);--txt:'新入生を対象にソフトウェアとハードウェアの基本的な内容を上級生が教えます。\aソフトウェア講習(Ruby・C言語)では基本制御構文から始まり、基礎的な内容の演習を行いました。\aハードウェア講習ではトランジスタやICなどの基礎的な電子素子の仕組みの紹介をし、実際に回路を作成する演習を実施しました。'">5月 新入生講習</p>
+		<p style="--img:url(img/hamami.png);--txt:'寝食を共にしながら互いに様々な分野の講習を行います。\a 2023年度は浜見寮(神奈川県藤沢市)に宿泊しました。'">8, 9月 合宿</p>
+		<p style="--img:url(img/contest.png);--txt:'ソフトウェア部門とハードウェア部門に分かれて作品アイデアを発表するコンテストです。\a投票で優秀賞や新人賞などを受賞した人には景品が贈られました!'">10月 工研コンテスト</p>
+		<p style="--img:url(img/prarail.png);--txt:'学園祭で部員の作品を展示します。\a去年に引き続き、プラレール企画を実施しました。'">11月 調布祭</p>
+		<p style="--img:url(img/lt.png);--txt:'各自が持ち寄ったテーマでLightning Talkと呼ばれる短いプレゼンをしました。'">4月 工研LT</p>
+	</div>
 	<p>
 		これらの他にも部員の成果をまとめた<a href="https://www.koken.club.uec.ac.jp/docs.html">部報</a>を定期的に発行し、
-		<a href="https://techbookfest.org/organization/5683127032741888">技術書典</a>やMaker Faireなど各種イベントに参加しています！
+		<a href="https://techbookfest.org/organization/5683127032741888">技術書典</a>やMaker Faireなど各種イベントに参加しています!
 	</p>
+	<hr>
 
 	<h2>活動情報</h2>
 	<table>
@@ -104,6 +106,7 @@
 		<tr><th>Twitter</th><td><a href="https://twitter.com/ueckoken">@ueckoken</a></td></tr>
 		<tr><th>メール</th><td><a href="mailto:koken.shinkan@gmail.com">koken.shinkan@gmail.com</a></td></tr>
 	</table>
+	<hr>
 
 	<h2>お問い合わせ</h2>
 	<p>
@@ -111,9 +114,23 @@
 		<a href="https://twitter.com/ueckoken">Twitter</a> で受け付けています。
 		<a href="https://discord.com/invite/eHZEdqJ">Discordサーバー</a> もあります。入部しなくても参加できるのでお気軽にどうぞ！
 	</p>
+	<hr>
 
 	<h2>作品紹介</h2>
 	<p>部員の作品の一部を紹介します。</p>
+	<div class="stuff">
+		<p style="--img:url(img/works/plarail.jpg);--txt:'プラレールをmicro:bitを用いて制御できるプログラミング教材です';">プラレール自動運転 with micro:bit @ぼいど</p>
+		<p style="--img:url(img/works/doki.png);--txt:'山で粘土を掘って皿の作成に挑戦している。釉薬も自作の予定。';">土器フルスクラッチ @淵野アタリ</p>
+		<!-- <p style="--img:url(img/works/komugi.jpg);--txt:'部が所有する畑で小麦を育てています。他の作物も準備中です。';">工研農園 @工学研究部</p> -->
+		<p style="--img:url(img/works/raden.jpg);--txt:'アワビの貝殻を砕き破片を並べて制作。';">トンボの螺鈿ブローチ @淵野アタリ</p>
+		<p style="--img:url(img/works/palacoord.jpg);--txt:'非正方形基準グリッドによる文字表現の方法。';">令和のパラコードキーホルダー @淵野アタリ</p>
+		<p style="--img:url(img/works/race4c.png);--txt:'フルスクラッチ四足歩行ロボットレース。';">調布機械制作奨励競馬大会 @淵野アタリ(企画・運営)</p>
+		<p style="--img:url(img/works/network.jpg);--txt:'各種機器をラックに収納しました。部室ないは10Gbeになっておかつ、VLANでネットワーク分離をしています。';">部室ネットワーク @ぼいど</p>
+		<p style="--img:url(img/works/homesvr.jpg);--txt:'4代のミニPCでクラスタを組んでます。proxmoxの上にk8sクラスタを組んで、DiscordBotなど動かしてます。';">自宅鯖 @ぼいど</p>
+		<p style="--img:url(img/works/helreverb.png);--txt:'円安が加速している関係でDTMで使用するソフト音源やプラグインが値上っていて苦しいので自作した。JUCEライブラリを使用してC++で書いた。';">HelReverb @へるくん</p>
+		<p style="--img:url(img/works/hanba-gu.jpg);--txt:'材料:合挽き肉、塩コショウ、ナツメグ、パン粉、牛乳、卵';">ハンバーグ @わらび</p>
+		<p style="--img:url(img/works/oyakodon.jpg);--txt:'材料:ごはん、だし醤油、砂糖、卵、玉ねぎ、鶏もも肉';">親子丼 @わらび</p>
+	</div>
 
 </body>
 </html>
