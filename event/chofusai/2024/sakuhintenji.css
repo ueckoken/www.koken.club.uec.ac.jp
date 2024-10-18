@@ -1,0 +1,13 @@
+body{
+    margin: 20px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    background-color: black;
+    color: aliceblue;
+}
+
+
+a{
+    color: paleturquoise;
+}
