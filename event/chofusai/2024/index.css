@@ -24,3 +24,9 @@ h3{
 a{
     color: paleturquoise;
 }
+
+#place{
+    font-size: 25px;
+    color: aqua;
+    text-align: center;
+}
