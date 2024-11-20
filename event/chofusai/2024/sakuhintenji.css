@@ -12,29 +12,15 @@ a{
     color: paleturquoise;
 }
 
-#WitAqua{
-    background-color: aliceblue;
+.syokai{
     color: darkblue;
+    background-color: aliceblue;
+    text-indent: 1em;
 }
 
-#heruret{
-    background-color: aliceblue;
-    color: darkblue;
-}
 
-#kenkuri{
-    background-color: aliceblue;
-    color: darkblue;
-}
-
-#kurengame{
-    background-color: aliceblue;
-    color: darkblue;
-}
-
-#handyfan{
-    background-color: aliceblue;
-    color: darkblue;
+.img{
+    padding: 1em;
 }
 
 h2{
