@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="jp" prefix="og:http://ogp.me/ns#">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>工学研究部 2025新歓</title>
+
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="工研 新歓特設サイト 2025">
+	<meta property="og:description" content="工学研究部 新入生歓迎 特設サイト">
+	<meta property="og:url" content="https://www.koken.club.uec.ac.jp/event/shinkan/2025/">
+	<meta property="og:image" content="https://www.koken.club.uec.ac.jp/event/shinkan/2025/img/kokenLogo.png">
+
+</head>
+<body>
+	<style>
+		body{margin:8px auto;max-width:1024px;padding:16px;border-radius:16px;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);}
+		.party{transform-origin:bottom;}
+		input:checked~.party,input:checked~* .party{color:#f44;animation:party .6s infinite linear;}
+		@keyframes party{
+			0%{transform:skewX(-30deg);filter:hue-rotate(0);}
+			25%{transform:scaleY(1.3);}
+			50%{transform:skewX(30deg);}
+			75%{transform:scaleY(.7);}
+			100%{transform:skewX(-30deg);filter:hue-rotate(360deg);}
+		}
+
+		:root{--k:#223;--a:#6ca8;--w:#fff;--s:#8884;--bc:var(--w);--fc:var(--k);--bor:max(2px,.2em);background-color:var(--bc);}
+		@media(prefers-color-scheme:dark){:root{--bc:var(--k);--fc:var(--w);}:link{color:#8cf;}:visited{color:#c8f;}:link:active,:visited:active{color:#f8c;}}
+		:root::before{content:"";position:fixed;width:100%;height:100%;z-index:-1;background:0 0/48px url(img/kagome.svg);opacity:.1;}
+		.zab,.stuff>*,:root{color:var(--fc);font-family:sans-serif;}
+		.zab,.stuff>*,hr{box-sizing:border-box;border-radius:calc(3*var(--bor));appearance:none;-webkit-appearance:none;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);}
+		.zab,.stuff>*{margin:var(--bor) 0;outline:0;padding:var(--bor);border:#0000 var(--bor) solid;background-color:var(--c);display:inline-block;max-width:100%;vertical-align:middle;--c:var(--s);resize:none;transition:.2s;}
+		.zab:hover,.zab:focus,.stuff>*:hover,.stuff>*:focus{border-color:var(--c);background-color:#0000;}
+		hr{border:var(--bor) solid var(--s);}.bgca{--c:var(--a);}::placeholder{color:var(--s);opacity:1;}.zab:disabled{opacity:.5;}
+
+		.stuff{--scale:1;display:flex;flex-wrap:wrap;}
+		.stuff>*{margin:var(--bor);flex:0;}
+		.stuff>*::before{content:"";display:block;--a:calc(calc(340px*var(--scale)) - calc(var(--bor)*6));width:var(--a);height:var(--a);border-radius:var(--bor);background:no-repeat center/cover var(--img,url(img/kokenLogo.svg));}
+		.stuff>*::after{content:var(--txt);display:inline-block;width:100%;font-size:small;text-decoration:none;color:var(--fc);white-space:pre-wrap;}
+		.irp{image-rendering:pixelated;}
+
+		.carousel{--width:50%;--margin:16px;display:flex;overflow:auto;scroll-snap-type:x mandatory;}
+		.carousel>*{flex:0 0 auto;object-fit:contain;scroll-snap-align:center;width:var(--width);margin:0 var(--margin);}
+		.carousel::before,.carousel::after{content:"";display:block;flex-shrink:0;width:calc(calc(50% - var(--margin)) - calc(var(--width)/2));}
+		@media(max-width:560px){.carousel{--width:100%;--margin:0;}}
+
+		input[type=checkbox].toggle{--size:2em;-webkit-appearance:none;appearance:none;display:inline-block;position:relative;width:calc(var(--size)*1.75);height:var(--size);border-radius:calc(3*var(--bor));vertical-align:middle;color:inherit;background-color:var(--s);transition:cubic-bezier(0,1,.5,1.5) .2s;}
+		input[type=checkbox].toggle::before{content:attr(O);transform:translateX(calc(var(--size)*.4375))translate(-50%,-50%);color:inherit;font-size:calc(var(--size)*.5);transition:inherit;position:absolute;top:50%;left:50%;}
+		input[type=checkbox].toggle::after{content:"";display:block;width:var(--size);height:var(--size);border-radius:calc(3*var(--bor));position:absolute;top:0;transform:scale(.75);background-color:#fff;transition:inherit;}
+		input[type=checkbox]:checked.toggle{background-color:var(--a);}
+		input[type=checkbox]:checked.toggle::before{content:attr(I);transform:translateX(calc(var(--size)*-.4375))translate(-50%,-50%);}
+		input[type=checkbox]:checked.toggle::after{transform:translateX(calc(var(--size)*.75))scale(.75);}
+		input[type=checkbox]:disabled.toggle{filter:saturate(0)opacity(.5);}
+	</style>
+	<input type="checkbox" class="toggle" I="I" O="O">
+	<h1>工学研究部</h1>
+	<hr>
+	<h2>工学研究部とは？</h2>
+	<p>
+		工学研究部は部員がそれぞれモノづくりをする技術系の<b>大学公認</b>サークルです。ハードウェアからソフトウェアまで幅広く活動しています。
+		棚いっぱいの電子部品や常時稼働しているサーバー、加工機、3Dプリンターなどの設備で部員の活動をサポートします。
+	</p>
+	<h3>主な活動内容</h3>
+	<ul>
+		<li>電子工作</li>
+		<li>機械工作</li>
+		<li>3D工作</li>
+		<li>プログラミング</li>
+		<li>IoT</li>
+		<li>マイコン</li>
+		<li>Webアプリ</li>
+		<li>Cloud Computing</li>
+		<li>サーバー</li>
+		<li>ネットワーク</li>
+		<li>FPGA・CPLD</li>
+		<li>手芸・裁縫</li>
+		<li>料理</li>
+		<li>...その他工学に関することならなんでも</li>
+	</ul>
+	<h3>活動紹介動画</h3>
+	<iframe src="https://www.youtube-nocookie.com/embed/OgtSbhXeUhg" frameborder="0"></iframe>
+	<hr>
+
+	<h2>新歓イベント情報</h2>
+	<p>工学研究部が実施または参加する新歓イベントの一覧です(随時更新)。</p>
+<ul>
+<li>4/04@西10-103</li>
+<li>4/07@A202</li>
+<li>4/13@A403</li>
+<li>4/07,13@B102 <a href="https://www.tech-shinkan.club.uec.ac.jp/tech-shinkan-25/">技術系サークル合同新歓</a></li>
+</ul>
+
+	<h2>入部方法</h2>
+	<p>毎週金曜日に実施する部会で入部届を配布しています。また、随時部室でも入部を受け付けています。<a href="https://discord.com/invite/eHZEdqJ">Discord</a></p>
+	<h3>部費</h3>
+	<p>半期ごとの額です。</p>
+	<table>
+		<tr><th>学域1年生</th><td>5000円</td></tr>
+		<tr><th>その他</th><td>6000円</td></tr>
+	</table>
+	<hr>
+
+	<h2>活動内容(昨年度)</h2>
+	<div class="stuff">
+		<p style="--img:url(img/koshu.png);--txt:'新入生を対象にソフトウェアとハードウェアの基本的な内容を上級生が教えます。\aソフトウェア講習(Ruby・C言語)では基本制御構文から始まり、基礎的な内容の演習を行いました。\aハードウェア講習ではトランジスタやICなどの基礎的な電子素子の仕組みの紹介をし、実際に回路を作成する演習を実施しました。'">5月 新入生講習</p>
+		<p style="--img:url(img/hamami.png);--txt:'寝食を共にしながら互いに様々な分野の講習を行います。\a 2024年度は浜見寮(神奈川県藤沢市)に宿泊しました。'">8, 9月 合宿</p>
+		<p style="--img:url(img/contest.png);--txt:'ソフトウェア部門とハードウェア部門に分かれて作品アイデアを発表するコンテストです。\a投票で優秀賞や新人賞などを受賞した人には景品が贈られました!'">9月 工研コンテスト</p>
+		<p style="--img:url(img/prarail.png);--txt:'学園祭で部員の作品を展示します。\a去年に引き続き、プラレール企画を実施しました。'">11月 調布祭</p>
+		<p style="--img:url(img/lt.png);--txt:'各自が持ち寄ったテーマでLightning Talkと呼ばれる短いプレゼンをしました。'">3月 工研LT</p>
+	</div>
+	<p>
+		これらの他にも部員の成果をまとめた<a href="https://www.koken.club.uec.ac.jp/docs.html">部報</a>を定期的に発行し、
+		<a href="https://techbookfest.org/organization/5683127032741888">技術書典</a>やMaker Faireなど各種イベントに参加しています!
+	</p>
+	<hr>
+
+	<h2>活動情報</h2>
+	<table>
+		<tr><th>活動日</th><td>いつでも</td></tr>
+		<tr><th>部室</th><td>サークル棟2階 製作室(黄色と黒の警告色のドアが目印です)</td></tr>
+		<tr><th>部会</th><td>毎週金曜日18:00より</td></tr>
+		<tr><th>Twitter</th><td><a href="https://x.com/ueckoken">@ueckoken</a></td></tr>
+		<tr><th>メール</th><td><a href="mailto:koken.shinkan@gmail.com">koken.shinkan@gmail.com</a></td></tr>
+	</table>
+	<hr>
+
+	<h2>お問い合わせ</h2>
+	<p>
+		<a href="mailto:koken.shinkan@gmail.com">メール</a> または
+		<a href="https://x.com/ueckoken">Twitter</a> で受け付けています。
+		<a href="https://discord.com/invite/eHZEdqJ">Discordサーバー</a> もあります。入部しなくても参加できるのでお気軽にどうぞ！
+	</p>
+	<hr>
+
+	<h2>作品紹介</h2>
+	<p>部員の作品の一部を紹介します。</p>
+	<div class="stuff">
+		<p style="--img:url(img/works/plarail.jpg);--txt:'プラレールをmicro:bitを用いて制御できるプログラミング教材です';">プラレール自動運転 with micro:bit @ぼいど</p>
+		<p style="--img:url(img/works/doki.png);--txt:'山で粘土を掘って皿の作成に挑戦している。釉薬も自作の予定。';">土器フルスクラッチ @淵野アタリ</p>
+		<!-- <p style="--img:url(img/works/komugi.jpg);--txt:'部が所有する畑で小麦を育てています。他の作物も準備中です。';">工研農園 @工学研究部</p> -->
+		<p style="--img:url(img/works/raden.jpg);--txt:'アワビの貝殻を砕き破片を並べて制作。';">トンボの螺鈿ブローチ @淵野アタリ</p>
+		<p style="--img:url(img/works/palacoord.jpg);--txt:'非正方形基準グリッドによる文字表現の方法。';">令和のパラコードキーホルダー @淵野アタリ</p>
+		<p style="--img:url(img/works/race4c.png);--txt:'フルスクラッチ四足歩行ロボットレース。';">調布機械制作奨励競馬大会 @淵野アタリ(企画・運営)</p>
+		<p style="--img:url(img/works/network.jpg);--txt:'各種機器をラックに収納しました。部室内は10GbEになっており、VLANでネットワーク分離をしています。';">部室ネットワーク @ぼいど</p>
+		<p style="--img:url(img/works/homesvr.jpg);--txt:'4台のミニPCでクラスタを組んでます。Proxmoxの上にk8sクラスタを組んで、Discord Botなど動かしてます。';">自宅鯖 @ぼいど</p>
+		<p style="--img:url(img/works/helreverb.png);--txt:'円安が加速している関係でDTMで使用するソフト音源やプラグインが値上っていて苦しいので自作した。JUCEライブラリを使用してC++で書いた。';">HelReverb @へるくん</p>
+		<p style="--img:url(img/works/hanba-gu.jpg);--txt:'材料:合挽き肉、塩コショウ、ナツメグ、パン粉、牛乳、卵';">ハンバーグ @わらび</p>
+		<p style="--img:url(img/works/oyakodon.jpg);--txt:'材料:ごはん、だし醤油、砂糖、卵、玉ねぎ、鶏もも肉';">親子丼 @わらび</p>
+	</div>
+	<script>document.querySelectorAll('h1,h2,h3,p,iframe,li,th,td').forEach(x=>x.classList.add('party'))</script>
+</body>
+</html>
