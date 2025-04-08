@@ -169,24 +169,11 @@
 				その他 工学なんでも
 			</li>
 		</ul>
-		<aside class="twitter"></aside>
 	</main>
 </div>
 <footer class="container global-footer">
 	<p class="copyright"><small>© UEC Koken</small></p>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" defer></script>
-<script src="https://platform.twitter.com/widgets.js"></script>
-<script>
-	const twitterTimelineWidgetContainer = document.querySelector(".twitter")
-	const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
-	twttr.widgets.createTimeline({
-		sourceType: "profile",
-		screenName: "ueckoken"
-	}, twitterTimelineWidgetContainer, {
-		height: 500,
-		theme: isDarkMode ? "dark" : undefined
-	})
-</script>
 </body>
 </html>
