@@ -1,11 +1,11 @@
 /* ==============================
    工学研究部 調布祭特設サイト 2025
-   styles.css
+   styles.css（修正版）
    ============================== */
 
 /* 全体設定 */
 body {
-    font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+    font-family: sans-serif;
     background-color: #f9fafc;
     color: #333;
     line-height: 1.8;
