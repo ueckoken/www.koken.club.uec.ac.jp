@@ -176,10 +176,17 @@ main > h1:first-child {
 	text-wrap: balance;
 }
 
-.activity-list .material-symbols-outlined {
-	display: block;
-	margin-block-end: 0.5rem;
-	font-size: 3rem;
+.activity-list li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.activity-list svg {
+	width: 3rem;
+	height: 3rem;
+	fill: currentColor;
 }
 
 .shinkan-poster{
