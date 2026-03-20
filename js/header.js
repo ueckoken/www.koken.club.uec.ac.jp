@@ -105,7 +105,9 @@ export class KokenBuhoList extends HTMLElement{
 					[
 						...fmt('1~7,41~52,54~59')(),
 						...fmt('60~63')(x=>[{index:x+'hard',title:`第${x}号ハード編`},{index:x+'soft',title:`第${x}号ソフト編`}]),
-						...fmt('64~72')()
+						...fmt('64~72')(),
+						{ index: '73soft', title: '第73号ソフト編' },{ index: '73hard', title: '第73号ハード編' },
+						...fmt('74~77')()
 					]
 			)
 			.map(({index,title})=>`<koken-buho-item data-index="${index}" data-title="${title}"></koken-buho-item>`)
