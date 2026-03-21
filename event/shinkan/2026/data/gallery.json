@@ -2,11 +2,15 @@
   "photos": [
     {
       "src": "img/logo.svg",
-      "caption": "工学研究部のロゴ"
+      "caption": "工学研究部のロゴ(仮置き)"
     },
     {
       "src": "img/d5819b685a69601e.png",
-      "caption": "工学研究部の新歓チラシ"
+      "caption": "工学研究部の新歓チラシ(仮置き)"
+    },
+    {
+      "src": "img/hamami.png",
+      "caption": "合宿先の浜見寮"
     }
   ]
 }
