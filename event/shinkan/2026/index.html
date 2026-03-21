@@ -57,7 +57,8 @@
 			<p><strong>HP：</strong><a href="https://www.koken.club.uec.ac.jp/">https://www.koken.club.uec.ac.jp/</a></p>
 			<p><strong>Email：</strong>koken.shinkan[at]gmail.com</a></p>
 			<p><strong>Twitter：</strong><a href="https://x.com/ueckoken">https://x.com/ueckoken</a></p>
-			<p><strong>Discord：</strong><a href="https://discord.com/invite/eHZEdqJ">https://discord.com/invite/eHZEdqJ</a>
+			<p><strong>Discord：</strong><a
+					href="https://discord.com/invite/eHZEdqJ">https://discord.com/invite/eHZEdqJ</a>
 			</p>
 		</section>
 
@@ -132,61 +133,27 @@
 							</ul>
 						</li>
 					</ul>
-					<!--
-					<div class="table-scroll">
-						<table>
-							<tr>
-								<th>時期</th>
-								<th>タイトル</th>
-								<th>詳細</th>
-							</tr>
-							<tr>
-								<td>5月</td>
-								<td>新入生講習</td>
-								<td>
-									新入生を対象に秋葉原、ソフトウェア、ハードウェアの基本的な内容を上級生が教えます。ソフトウェア講習(Ruby・C言語)では基本制御構文から始まり、基礎的な内容の演習を行いました。ハードウェア講習ではトランジスタやICなどの基礎的な電子素子の仕組みの紹介をし、実際に回路を作成する演習を実施しました。
-								</td>
-							</tr>
-							<tr>
-								<td>8, 9月</td>
-								<td>合宿</td>
-								<td>寝食を共にしながら互いに様々な分野の講習を行います。8月は浜見寮(神奈川県藤沢市), 9月は菅平セミナーハウス(長野県上田市)に宿泊しました。</td>
-							</tr>
-							<tr>
-								<td>9月</td>
-								<td>工研コンテスト</td>
-								<td>ソフトウェア部門とハードウェア部門に分かれて作品アイデアを発表するコンテストです。投票で優秀賞や新人賞などを受賞した人には景品が贈られました!</td>
-							</tr>
-							<tr>
-								<td>11月</td>
-								<td>調布祭</td>
-								<td>学園祭で部員の作品を展示します。</td>
-							</tr>
-							<tr>
-								<td>3月</td>
-								<td>工研LT</td>
-								<td>各自が持ち寄ったテーマでLightning Talkと呼ばれる短いプレゼンをしました。(執筆当時の見込み)</td>
-							</tr>
-						</table>
-					</div>
-					-->
-					<p>これらの他にも部員の成果をまとめた<a href="https://www.koken.club.uec.ac.jp/docs.html">部報</a>を定期的に発行し、
-						<a href="https://techbookfest.org/organization/5683127032741888">技術書典</a>やMaker Faireなど各種イベントに参加しています!
+					<p>これらの他にも部員の成果をまとめた<a href="https://www.koken.club.uec.ac.jp/docs.html">部報</a>を定期的に発行し、<a
+							href="https://techbookfest.org/organization/5683127032741888">技術書典</a>やMakerFaireなど各種イベントに参加しています!
 					</p>
 				</article>
 				<article>
 					<h3>作品・写真紹介</h3>
-					<p>工事中</p>
+					<div class="gallery">
+
+						<button class="gallery-btn prev" id="prev">‹</button>
+
+						<figure class="gallery-frame">
+							<img id="gallery-img">
+							<figcaption id="gallery-caption"></figcaption>
+						</figure>
+
+						<button class="gallery-btn next" id="next">›</button>
+
+					</div>
 			</section>
 			</article>
 		</section>
-		</section>
-		<section id="materials" class="card">
-			<h2>紹介チラシ</h2>
-			<div class="media-limit">
-				<figure> <img src="img\d5819b685a69601e.png" alt="工学研究部の新歓チラシ" />
-				</figure>
-			</div>
 		</section>
 		<section id="video" class="card">
 			<h2>紹介動画</h2>
@@ -198,86 +165,16 @@
 					referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </div>
 		</section>
 	</main>
+
 	<div class="toc-backdrop" id="toc-backdrop" hidden></div>
 	<nav class="toc-panel" id="toc-panel" aria-labelledby="toc-title" hidden>
 		<h2 id="toc-title">目次</h2>
 		<div class="toc-list" id="toc-list"></div>
 	</nav> <button class="toc-fab" id="toc-fab" type="button" aria-controls="toc-panel" aria-expanded="false"
 		aria-label="目次を開く">目次</button>
-	<script>
-		(() => {
-			const headings = Array.from(document.querySelectorAll(" main h2, main h3")); const
-				tocList = document.getElementById("toc-list"); const tocPanel = document.getElementById("toc-panel"); const
-					tocFab = document.getElementById("toc-fab"); const tocBackdrop = document.getElementById("toc-backdrop"); if
-				(!headings.length || !tocList || !tocPanel || !tocFab || !tocBackdrop) { return; } const slugify = (text, index) => {
-					const base = text
-						.trim()
-						.toLowerCase()
-						.replace(/\s+/g, "-")
-						.replace(/[^\w\-ぁ-んァ-ン一-龠]/g, "")
-					return base || `section-${index + 1}`;
-				};
 
-			headings.forEach((heading, index) => {
-				if (!heading.id) {
-					const seed = slugify(heading.textContent || "", index);
-					let candidate = seed;
-					let suffix = 2;
-					while (document.getElementById(candidate)) {
-						candidate = `${seed}-${suffix}`;
-						suffix += 1;
-					}
-					heading.id = candidate;
-				}
-
-				const link = document.createElement("a");
-				link.href = `#${heading.id}`;
-				link.textContent = heading.textContent || `Section ${index + 1}`;
-				if (heading.tagName.toLowerCase() === "h3") {
-					link.classList.add("toc-subitem");
-				}
-				link.addEventListener("click", closeToc);
-				tocList.appendChild(link);
-			});
-
-			const openToc = () => {
-				tocPanel.hidden = false;
-				tocBackdrop.hidden = false;
-				requestAnimationFrame(() => {
-					tocPanel.classList.add("is-open");
-					tocBackdrop.classList.add("is-open");
-				});
-				tocFab.setAttribute("aria-expanded", "true");
-			};
-
-			function closeToc() {
-				tocPanel.classList.remove("is-open");
-				tocBackdrop.classList.remove("is-open");
-				tocFab.setAttribute("aria-expanded", "false");
-				window.setTimeout(() => {
-					if (tocFab.getAttribute("aria-expanded") === "false") {
-						tocPanel.hidden = true;
-						tocBackdrop.hidden = true;
-					}
-				}, 200);
-			}
-
-			tocFab.addEventListener("click", () => {
-				if (tocFab.getAttribute("aria-expanded") === "true") {
-					closeToc();
-					return;
-				}
-				openToc();
-			});
-
-			tocBackdrop.addEventListener("click", closeToc);
-			document.addEventListener("keydown", (event) => {
-				if (event.key === "Escape") {
-					closeToc();
-				}
-			});
-		})();
-	</script>
+	<script src="js/toc.js"></script>
+	<script src="js/gallery.js"></script>
 </body>
 
 </html>
