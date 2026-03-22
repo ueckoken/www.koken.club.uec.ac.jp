@@ -7,8 +7,13 @@
     },
     {
       "type": "image",
+      "src": "https://pbs.twimg.com/media/Gn-cn_QbEAAMenp?format=jpg&name=large",
+      "caption": "部室入口"
+    },
+    {
+      "type": "image",
       "src": "img/PXL_20250604_112948572.jpg",
-      "caption": "新歓基板"
+      "caption": "新入生ハード講習"
     },
     {
       "type": "image",
@@ -24,6 +29,11 @@
       "type": "image",
       "src": "img/DSC_1606.jpg",
       "caption": "鉄道信号機 by Rei"
+    },
+    {
+      "type": "image",
+      "src": "img/IMG_2959.jpg",
+      "caption": "3Dプリンター by packetloss40"
     },
     {
       "type": "video",
