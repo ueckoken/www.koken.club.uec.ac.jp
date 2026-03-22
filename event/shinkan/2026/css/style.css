@@ -1,6 +1,6 @@
 :root {
 	color-scheme: light;
-	font-family: "Noto Sans JP", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+	font-family: sans-serif;
 	background-color: #eef5ff;
 	color: #0b1a33;
 }
@@ -80,13 +80,9 @@ main {
 }
 
 .grid {
-	/*display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-	gap: 1.5rem;*/
 	display: grid;
 	grid-template-columns: 1fr;
 	gap: 1.5rem;
-	/*max-width: 840px;*/
 	margin: 0 auto;
 }
 
@@ -275,7 +271,8 @@ footer {
 	margin: 0;
 }
 
-.gallery img {
+.gallery img,
+.gallery video {
 	width: 100%;
 	height: 420px;
 	object-fit: contain;
@@ -325,6 +322,25 @@ footer {
 	transition: opacity .25s;
 }
 
+.gallery-frame {
+	position: relative;
+}
+
+.gallery-counter {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+
+	background: rgba(0, 0, 0, 0.55);
+	color: white;
+
+	padding: 4px 10px;
+	border-radius: 999px;
+	font-size: 0.8rem;
+
+	backdrop-filter: blur(4px);
+}
+
 @media (max-width: 600px) {
 	header.hero {
 		padding: 2.5rem 4vw;
@@ -369,5 +385,4 @@ footer {
 		height: 38px;
 		font-size: 18px;
 	}
-
 }
