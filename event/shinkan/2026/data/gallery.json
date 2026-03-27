@@ -1,0 +1,64 @@
+{
+  "photos": [
+    {
+      "type": "image",
+      "src": "img/d5819b685a69601e.png",
+      "caption": "工学研究部"
+    },
+    {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/Gn-cn_QbEAAMenp?format=jpg&name=large",
+      "caption": "部室入口"
+    },
+    {
+      "type": "image",
+      "src": "img/PXL_20250604_112948572.jpg",
+      "caption": "新入生ハード講習"
+    },
+    {
+      "type": "image",
+      "src": "img/IMG_2813.jpg",
+      "caption": "petフィラメント by packetloss40"
+    },
+    {
+      "type": "image",
+      "src": "img/hamami.png",
+      "caption": "合宿先の浜見寮"
+    },
+    {
+      "type": "image",
+      "src": "img/DSC_1606.jpg",
+      "caption": "鉄道信号機 by Rei"
+    },
+    {
+      "type": "image",
+      "src": "img/IMG_2959.jpg",
+      "caption": "3Dプリンター by packetloss40"
+    },
+    {
+      "type": "video",
+      "src": "img/PXL_20250902_062704158.mp4",
+      "caption": "3Dマトリクス by terraria"
+    },
+    {
+      "type": "img",
+      "src": "img/IMG_5034.jpg",
+      "caption": "ESP +液晶で受信した1090mhzをひたすら映し続けるディスプレイ by カワウソ"
+    },
+    {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/G6Krgrla0AAPuBW?format=jpg&name=large",
+      "caption": "調布祭の様子"
+    },
+    {
+      "type": "image",
+      "src": "img/AGC_20251127_144032306.jpg",
+      "caption": "電気パン by らぼねこ"
+    },
+    {
+      "type": "image",
+      "src": "img/PXL_20251206_151340630.jpg",
+      "caption": "ゲーミング工研 by Laddge"
+    }
+  ]
+}
