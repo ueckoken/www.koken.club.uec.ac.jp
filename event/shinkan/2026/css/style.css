@@ -46,7 +46,7 @@ header.hero .logo {
 	height: 2.0em;
 	width: auto;
 	flex: 0 0 auto;
-	padding: 0.14em 0.18em;
+	padding: 0.25em;
 	border-radius: 0.2em;
 	background: rgb(255, 255, 255);
 }
