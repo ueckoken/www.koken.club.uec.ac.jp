@@ -103,7 +103,14 @@ export class KokenBuhoList extends HTMLElement{
 				this.dataset.range?
 					Function('return '+this.dataset.range)():
 					[
-						...fmt('1~7,41~52,54~59')(),
+						...fmt('1~10')(),
+						{ index: '11robot', title: '第11号ロボット編' },
+						...fmt('11~12,14~21,23~25')(),
+						{ index: '26_04', title: '第26号(2004年)' },{ index: '26_05', title: '第26号(2005年)' },
+						...fmt('27~35')(),
+						{ index: '35make', title: '第35号(Make増刊号)' },
+						{ index: '36', title: '第36号' },{ index: '36make', title: '第36号(Make増刊号)' },
+						...fmt('37~52,54~59')(),
 						...fmt('60~63')(x=>[{index:x+'hard',title:`第${x}号ハード編`},{index:x+'soft',title:`第${x}号ソフト編`}]),
 						...fmt('64~72')(),
 						{ index: '73soft', title: '第73号ソフト編' },{ index: '73hard', title: '第73号ハード編' },
