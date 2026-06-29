@@ -27,6 +27,11 @@ export class KokenGlobalHeader extends HTMLElement {
 			</a>
 		</li>
 		<li>
+			<a href="https://www.instagram.com/ueckoken">
+				<img src="${rootAbsolutePath}img/instagram-logo.png" alt="工学研究部Instagramアカウント" width="128" height="128">
+			</a>
+		</li>
+		<li>
 			<a href="https://github.com/ueckoken">
 				<picture>
 					<source media="(prefers-color-scheme: dark)" srcset="${rootAbsolutePath}img/github-mark-white.svg" sizes="98">
