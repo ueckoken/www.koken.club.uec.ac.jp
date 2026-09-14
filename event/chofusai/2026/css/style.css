@@ -1,0 +1,202 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #c0c0c0;
+  color: #000;
+  font-family: sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: #0000ee;
+}
+
+a:visited {
+  color: #551a8b;
+}
+
+main {
+  width: min(760px, calc(100% - 20px));
+  margin: 10px auto;
+  background: #fff;
+  border: 2px outset #ddd;
+}
+
+header {
+  padding: 12px;
+  color: #fff;
+  text-align: center;
+  background: #000080;
+}
+
+.logo {
+  display: inline-block;
+  padding: 5px;
+  background: #fff;
+  border: 2px outset #ddd;
+}
+
+.logo img {
+  display: block;
+  width: 180px;
+  height: auto;
+}
+
+header h1 {
+  margin: 8px 0 2px;
+  font-size: 28px;
+}
+
+header p {
+  margin: 0;
+}
+
+header marquee {
+  display: block;
+  margin-top: 8px;
+}
+
+nav {
+  padding: 7px;
+  text-align: center;
+  background: #e0e0e0;
+  border-top: 2px inset #fff;
+  border-bottom: 2px inset #fff;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.notice {
+  padding: 4px 8px;
+  text-align: center;
+  background: #ffffcc;
+  border-bottom: 1px solid #999;
+  font-size: 13px;
+}
+
+.new {
+  color: red;
+  font-weight: bold;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+}
+
+aside {
+  padding: 10px;
+  border-right: 1px solid #999;
+}
+
+aside h2 {
+  margin: 0 0 8px;
+  padding: 3px 5px;
+  color: #fff;
+  background: #000080;
+  font-size: 15px;
+}
+
+aside section+section {
+  margin-top: 20px;
+}
+
+aside ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+article {
+  padding: 10px;
+}
+
+article section+section {
+  margin-top: 20px;
+}
+
+article h2 {
+  margin: 0 0 10px;
+  padding: 4px 8px;
+  background: #e0e0e0;
+  border: 1px solid #888;
+  font-size: 21px;
+}
+
+article p {
+  margin: 8px 0;
+}
+
+article hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #999;
+}
+
+footer {
+  padding: 12px;
+  text-align: center;
+  border-top: 1px solid #999;
+  font-size: 12px;
+}
+
+@media (max-width: 600px) {
+
+  main {
+    width: calc(100% - 10px);
+    margin: 5px;
+  }
+
+  header {
+    padding: 10px 6px;
+  }
+
+  .logo img {
+    width: 150px;
+  }
+
+  header h1 {
+    font-size: 22px;
+  }
+
+  .layout {
+    display: block;
+  }
+
+  aside {
+    border-right: 0;
+    border-bottom: 1px solid #999;
+  }
+
+  nav ul {
+    gap: 4px 12px;
+  }
+
+  nav a {
+    display: inline-block;
+    padding: 2px 0;
+  }
+
+  article h2 {
+    font-size: 19px;
+  }
+}
