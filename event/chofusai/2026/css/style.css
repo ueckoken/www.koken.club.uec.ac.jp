@@ -86,14 +86,6 @@ nav a {
   text-decoration: none;
 }
 
-.notice {
-  padding: 4px 8px;
-  text-align: center;
-  background: #ffffcc;
-  border-bottom: 1px solid #999;
-  font-size: 13px;
-}
-
 .new {
   color: red;
   font-weight: bold;
